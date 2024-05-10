@@ -1,0 +1,466 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Cipher - Creative Agency Portfolio HTML Template
+    Author: DesignCurved 
+    Author URI: https://themeforest.net/user/DesignCurved
+    Version: 1.0
+
+--------------------------
+   CSS INDEX
+--------------------------
+    01. Common css 
+    02. header section
+    03. Hero Style
+    04. footer Style
+    05. Home-style-1
+    06. text-moving-sec 
+    07. service-area
+    08. text-moving-sec-s2
+    09. about-area 
+    10. ch-service-area 
+    11. ch-portfolio-area
+    12. testimonial-section
+    13. ch-skill-area
+    14. ch-blog-area
+    15. ch-newsletter-area
+    16. Home-style-2
+    17. Home-style-3
+    18. Home-style-4
+    19. About Page
+    20. Service Page
+    21. Portfolio Page
+    22.	team single page
+    23. Service Page
+    24. Blog Page
+    25. Blog Single Page
+
+    -----------------------------------------------------------------------------------*/
+
+    
+/** mobile-menu **/
+
+.nav-outer .mobile-nav-toggler{
+    position: relative;
+    float: right;
+    font-size: 40px;
+    line-height: 50px;
+    cursor: pointer;
+    color:#3786ff;
+    display: none;
+  }
+  
+  .mobile-menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    padding-right:30px;
+    max-width:100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999;
+    transition: all 900ms ease;
+  }
+  
+  .mobile-menu .navbar-collapse{
+    display:block !important; 
+  }
+  
+  .mobile-menu .nav-logo{
+    position:relative;
+    padding:50px 25px;
+    text-align:left;  
+    padding-bottom: 50px;
+  }
+  
+  .mobile-menu-visible{
+    overflow: hidden;
+  }
+  
+  .mobile-menu-visible .mobile-menu{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .mobile-menu .menu-backdrop{
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 900ms ease;
+    background-color: #000;
+  }
+  
+  .mobile-menu-visible .mobile-menu .menu-backdrop{
+    opacity: 0.70;
+    visibility: visible;
+    right: 100%;
+    -webkit-transition: all .8s ease-out 0s;
+    -o-transition: all .8s ease-out 0s
+  }
+  
+  .mobile-menu .menu-box{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    background: #00061A;
+    padding: 0px 0px;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0px;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    transition: all 900ms ease !important;
+  }
+  
+  .mobile-menu-visible .mobile-menu .menu-box{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+ .mobile-nav-toggler {
+    position: relative;
+    width: 51px;
+    cursor: pointer;
+    color: #3786ff;
+    display: none;
+    background: #f1f45d;
+    height: 50px;
+    border-radius: 50%;
+  }
+ .mobile-nav-toggler .icon-bar{
+    position: relative;
+    height: 2px;
+    width: 21px;
+    display: block;
+    margin-bottom: 5px;
+    background-color: #1C3F39;
+    transition: all 300ms ease;
+  }
+  
+ .mobile-nav-toggler .icon-bar:last-child{
+    margin-bottom: 0px;
+  }
+  
+  .mobile-menu .close-btn{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    line-height: 30px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    color: #1C3F39;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.9s ease;
+    background: #f1f45d;
+    border-radius: 50%;
+  }
+  
+  .mobile-menu-visible .mobile-menu .close-btn{
+    -webkit-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+  
+  .mobile-menu .close-btn:hover{
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+  }
+  
+  .mobile-menu .navigation{
+    position: relative;
+    display: block;
+    width: 100%;
+    float: none;
+  }
+  
+  .mobile-menu .navigation li{
+    position: relative;
+    display: block;
+    border-top: 1px solid rgba(255,255,255,0.10);
+  }
+  
+  .mobile-menu .navigation:last-child{
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+  }
+  
+  .mobile-menu .navigation li > ul > li:first-child{
+    border-top: 1px solid rgba(255,255,255,0.10);
+  }
+  
+  .mobile-menu .navigation li > a{
+    position: relative;
+    display: block;
+    line-height: 24px;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; 
+  }
+  
+  .mobile-menu .navigation li ul li > a{
+    font-size: 16px;
+    margin-left: 20px;
+    text-transform: capitalize;
+  }
+  
+  .mobile-menu .navigation li > a:before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    height:0;
+    border-left:5px solid #fff;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; 
+  }
+  
+  .mobile-menu .navigation li.current > a:before{
+    height:100%;
+  }
+  
+  .mobile-menu .navigation li.dropdown .dropdown-btn{
+    position:absolute;
+    right:6px;
+    top:6px;
+    width:32px;
+    height:32px;
+    text-align:center;
+    font-size:16px;
+    line-height:32px;
+    color:#ffffff;
+    background:rgba(255,255,255,0.10);
+    cursor:pointer;
+    border-radius:2px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; 
+    z-index:5;
+  }
+  
+  .mobile-menu .navigation li.dropdown .dropdown-btn.open{
+    color: #ffffff;
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);  
+  }
+  
+  .mobile-menu .navigation li > ul,
+  .mobile-menu .navigation li > ul > li > ul,
+  .mobile-menu .navigation > li.dropdown > .megamenu{
+    display: none;
+  }
+  
+  .mobile-menu .social-links{
+    position:relative;
+    padding:0px 25px;
+  }
+  
+  .mobile-menu .social-links li{
+    position:relative;
+    display:inline-block;
+    margin:0px 10px 10px;
+  }
+  
+  .mobile-menu .social-links li a{
+    position:relative;
+    line-height:32px;
+    font-size:16px;
+    color:#ffffff;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; 
+  }
+  
+  
+  div#mCSB_1_container{
+    top: 0px !important;
+  }
+  
+  .mobile-menu .contact-info {
+    position: relative;
+    padding: 40px 30px 20px 30px;
+  }
+  
+  .mobile-menu .contact-info h4 {
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .mobile-menu .contact-info ul li {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: rgba(255,255,255,0.80);
+    margin-bottom: 3px;
+  }
+  
+  .mobile-menu .contact-info ul li a{
+    color: rgba(255,255,255,0.80);
+  }
+  
+  .mobile-menu .contact-info ul li a:hover{
+    text-decoration: underline;
+  }
+  
+  .mobile-menu .contact-info ul li:last-child{
+    margin-bottom: 0px;
+  }
+
+.mobile-nav-toggler {
+    position: relative;
+    float: right;
+    font-size: 40px;
+    line-height: 50px;
+    cursor: pointer;
+    color: #3786ff;
+    display: none;
+}
+
+.cp-header-area .main-menu .mobile-menu ul > li > a{
+    padding: 10px 8px;
+}
+.mobile-menu ul li .dropdown-btn.open+ul {
+    display: block;
+}
+nav#mobile-menuss .dropdown-btn {
+    display: none;
+}
+
+.video-area {
+  position: relative;
+}
+
+.video-area .modal-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.video-area .modal-video iframe {
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  padding: revert;
+}
+
+.video-area .modal-video .modal-video-movie-wrap {
+  padding-bottom: 0% !important;
+}
+
+.video-area button.btn-primary {
+  background: transparent;
+  width: 0px;
+  border: none;
+}
+
+.video-area button.modal-video-close-btn:before {
+  position: absolute;
+  width: 30px;
+  height: 28px;
+  content: "\e646";
+  font-family: themify;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  border-radius: 50%;
+}
+
+button.modal-video-close-btn {
+  border: none;
+  position: absolute;
+  right: -15px;
+  background: none;
+  top: 10px;
+}
+
+.ch-portfolio-area.three .portfolio-item .portfolio-img img {
+  width: auto;
+  border-radius: 7px;
+}
+
+
+
+// helpers
+@import "./helpers/variables.scss";
+@import "./helpers/mixins.scss";
+
+// base
+@import "./base/base.scss";
+
+
+// components
+@import "./components/section-title.scss";
+@import "./components/buttons.scss";
+@import "./components/form.scss";
+@import "./components/social-links.scss";
+@import "./components/page-title.scss";
+@import "./components/preloader.scss";
+@import "./components/pagination.scss";
+
+// layout
+@import "./layout/header.scss";
+@import "./layout/hero-slider.scss";
+@import "./layout/footer.scss";
+
+// components
+@import "./components/sticky-header.scss";
+
+
+// page
+@import "./page/home-default.scss";
+@import "./page/home-style-2.scss";
+@import "./page/home-style-3.scss";
+@import "./page/home-style-4.scss";
+@import "./page/home-style-5.scss";
+@import "./page/about.scss";
+@import "./page/services.scss";
+@import "./page/portfolio.scss";
+@import "./page/blog.scss";
+@import "./page/blog-single.scss";
+@import "./page/contact.scss";
+@import "./page/team-single.scss";
+@import "./Icomoon.scss";
+@import "./animate.scss";
+@import "./Themifyicons.scss";
