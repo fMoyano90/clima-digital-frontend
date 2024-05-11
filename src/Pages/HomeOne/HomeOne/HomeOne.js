@@ -7,11 +7,9 @@ import Service from "../Service/Service";
 import TextAnimationTwo from "../TextAnimationTwo/TextAnimationTwo";
 import AboutOne from "../AboutOne/AboutOne";
 import PortfoliosOne from "../PortfoliosOne/PortfoliosOne";
-import ServiceTwo from "../ServiceTwo/ServiceTwo";
 import Testimonial from "../Testimonial/Testimonial";
 import SkillOne from "../SkillOne/SkillOne";
 import Blog from "../Blog/Blog";
-import Newsletter from "../Newsletter/Newsletter";
 import { pageTitle } from "../../PageTitle";
 
 const HomeOne = () => {

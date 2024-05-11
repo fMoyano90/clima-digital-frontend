@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Home, Portfolio, Services, News } from "./Menu";
-import DropDown from "./DropDown";
+// import { Home, Portfolio, Services, News } from "./Menu";
+// import DropDown from "./DropDown";
 import Logo from "../../assets/images/logo.png";
 
 export default function Header({ variant }) {

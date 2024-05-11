@@ -11,7 +11,6 @@ import img3 from "../../assets/images/blog/blog-13.jpg";
 import img4 from "../../assets/images/recent-post/img-1.jpg";
 import img5 from "../../assets/images/recent-post/img-2.jpg";
 import img6 from "../../assets/images/recent-post/img-3.jpg";
-import img7 from "../../assets/images/blog/about.png";
 
 const BlogRightSidebar = () => {
   pageTitle("Blog Right Sidebar");

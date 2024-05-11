@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import CountUp from "react-countup";
-import { Link } from "react-router-dom";
 import WOW from "wowjs";
 
 const SkillOne = () => {
