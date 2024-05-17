@@ -42,7 +42,7 @@ const Services = () => {
                         aenean quis habit aeros who ath bibendum
                       </p>
                       <Link to='/service-single' className='read-more'>
-                        Read More
+                        Leer Más
                       </Link>
                     </div>
                   </div>
@@ -64,7 +64,7 @@ const Services = () => {
                         aenean quis habit aeros who ath bibendum
                       </p>
                       <Link to='/service-single' className='read-more'>
-                        Read More
+                        Leer Más
                       </Link>
                     </div>
                   </div>
@@ -86,7 +86,7 @@ const Services = () => {
                         aenean quis habit aeros who ath bibendum
                       </p>
                       <Link to='/service-single' className='read-more'>
-                        Read More
+                        Leer Más
                       </Link>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ const Services = () => {
                         aenean quis habit aeros who ath bibendum
                       </p>
                       <Link to='/service-single' className='read-more'>
-                        Read More
+                        Leer Más
                       </Link>
                     </div>
                   </div>
@@ -133,7 +133,7 @@ const Services = () => {
                         aenean quis habit aeros who ath bibendum
                       </p>
                       <Link to='/service-single' className='read-more'>
-                        Read More
+                        Leer Más
                       </Link>
                     </div>
                   </div>
@@ -157,7 +157,78 @@ const Services = () => {
                         aenean quis habit aeros who ath bibendum
                       </p>
                       <Link to='/service-single' className='read-more'>
-                        Read More
+                        Leer Más
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className='col col-lg-4 col-md-6 col-12'>
+                  <div
+                    className='service-item wow fadeInUp'
+                    data-wow-duration='1600ms'
+                  >
+                    <div className='service-text'>
+                      <div className='icon'>
+                        <i className='icon-angle'></i>
+                      </div>
+                      <h3>
+                        <Link to='/service-single'>E-commerce Solutions</Link>
+                      </h3>
+                      <p>
+                        Purus velit aenean quis habitant eros the a bibendum
+                        aenean quis habit aeros who ath bibendum
+                      </p>
+                      <Link to='/service-single' className='read-more'>
+                        Leer Más
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className='col col-lg-4 col-md-6 col-12'>
+                  <div
+                    className='service-item wow fadeInUp active'
+                    data-wow-duration='1800ms'
+                  >
+                    <div className='service-text'>
+                      <div className='icon'>
+                        <i className='icon-vec2'></i>
+                      </div>
+                      <h3>
+                        <Link to='/service-single'>
+                          {" "}
+                          SEO and Digital Advertising
+                        </Link>
+                      </h3>
+                      <p>
+                        Purus velit aenean quis habitant eros the a bibendum
+                        aenean quis habit aeros who ath bibendum
+                      </p>
+                      <Link to='/service-single' className='read-more'>
+                        Leer Más
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className='col col-lg-4 col-md-6 col-12'>
+                  <div
+                    className='service-item wow fadeInUp'
+                    data-wow-duration='2000ms'
+                  >
+                    <div className='service-text'>
+                      <div className='icon'>
+                        <i className='icon-angle4'></i>
+                      </div>
+                      <h3>
+                        <Link to='/service-single'>
+                          Web Development Wizardry
+                        </Link>
+                      </h3>
+                      <p>
+                        Purus velit aenean quis habitant eros the a bibendum
+                        aenean quis habit aeros who ath bibendum
+                      </p>
+                      <Link to='/service-single' className='read-more'>
+                        Leer Más
                       </Link>
                     </div>
                   </div>

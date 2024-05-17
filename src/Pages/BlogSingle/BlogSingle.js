@@ -1,7 +1,7 @@
 import React from 'react';
 import { pageTitle } from '../PageTitle';
 import BreadCrumb  from '../BreadCrumb';
-import HeaderTwo from '../Header/HeaderTwo';
+import HeaderOne from '../Header/HeaderOne';
 import FooterTwo from '../Footer/FooterTwo';
 import { Link } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const BlogSingle = () => {
   return (
     
     <>
-        <HeaderTwo></HeaderTwo>
+        <HeaderOne></HeaderOne>
         <BreadCrumb></BreadCrumb>
        
         <section class="blog-single-page-area ptb-120">

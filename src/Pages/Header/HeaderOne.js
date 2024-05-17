@@ -7,6 +7,12 @@ import Logo from "../../assets/images/logo.png";
 export default function Header({ variant }) {
   const [isSticky, setIsSticky] = useState(false);
   const [mobileToggle, setMobileToggle] = useState(false);
+  const handleClick = () => {
+    const url = `https://wa.me/56974690241?text=${encodeURIComponent(
+      "Hola, estoy interesado en un servicio."
+    )}`;
+    window.open(url, "_blank");
+  };
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
@@ -68,9 +74,9 @@ export default function Header({ variant }) {
                 </div>
                 <div className='col-xl-3 col-lg-3 col-md-3 col-3 text-left'>
                   <div className='cp-header-area-right'>
-                    <Link to='tel:5550112' className='call-btn'>
+                    <Link onClick={handleClick} className='call-btn'>
                       <i className='icon-Group-7042'></i>
-                      <span>Whatsapp: +569 9946 2945 </span>
+                      <span>Whatsapp: +569 7469 0241 </span>
                     </Link>
                   </div>
                 </div>

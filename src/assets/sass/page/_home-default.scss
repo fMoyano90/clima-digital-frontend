@@ -70,7 +70,7 @@
 
 .service-area,
 .service-area-s2 {
-	padding-top: 180px;
+	padding-top: 120px;
 	padding-bottom: 90px;
 
 	@media(max-width:991px) {
@@ -79,6 +79,32 @@
 
 	@media(max-width:767px) {
 		padding-bottom: 50px;
+	}
+
+	.service-wrap{
+		span {
+			font-family: $heading-font;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 27px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+			display: block;
+		}
+
+		h2 {
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 60px;
+			margin-bottom: 20px;
+
+			@media(max-width:1199px) {
+				font-size: 35px;
+				line-height: 45px;
+			}}
 	}
 
 	.service-item {

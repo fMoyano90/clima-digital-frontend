@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import WOW from "wowjs";
+import './Service.css';
 
 const Service = () => {
   useEffect(() => {
@@ -68,6 +69,8 @@ const Service = () => {
     <section className='service-area ptb-120'>
       <div className='container'>
         <div className='service-wrap'>
+          <span>DESTACADOS</span>
+          <h2 className='site-split-text ch-split-in-right pb-5'>Servicios Que Te Llevaran a las Nubes ☁️</h2>
           <div className='row'>
             {servicesData.map((item, id) => (
               <div className='col col-lg-4 col-md-6 col-12' key={id}>
@@ -90,6 +93,9 @@ const Service = () => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="text-center wow fadeInUp">
+            <button className="view-services-button">VER TODOS LOS SERVICIOS</button>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { pageTitle } from '../PageTitle';
 import BreadCrumb  from '../BreadCrumb';
-import HeaderTwo from '../Header/HeaderTwo';
+import HeaderOne from '../Header/HeaderOne';
 import FooterTwo from '../Footer/FooterTwo';
 import { Link } from "react-router-dom";
 import WOW from 'wowjs';
@@ -24,7 +24,7 @@ const Services = () => {
   return (
     
     <>
-        <HeaderTwo></HeaderTwo>
+        <HeaderOne></HeaderOne>
         <BreadCrumb></BreadCrumb>
 
         <div className="service-single-page ptb-120">

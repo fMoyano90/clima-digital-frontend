@@ -13,7 +13,7 @@ import Blog from "../Blog/Blog";
 import { pageTitle } from "../../PageTitle";
 
 const HomeOne = () => {
-  pageTitle("Cipher");
+  pageTitle("Clima Digital");
   return (
     <>
       <HeaderOne></HeaderOne>

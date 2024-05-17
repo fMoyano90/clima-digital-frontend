@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-    Template Name: Cipher - Creative Agency Portfolio HTML Template
+    Template Name: Clima Digital - Creative Agency Portfolio HTML Template
     Author: DesignCurved 
     Author URI: https://themeforest.net/user/DesignCurved
     Version: 1.0
@@ -416,7 +416,7 @@ a.ui-button:active,
 /*** mouse design***/
 .mouse-circle-mover {
   position: fixed;
-  background-color: #a5a743;
+  background-color: #ffca28;
   width: 10px;
   height: 10px;
   left: -10px;
@@ -433,7 +433,7 @@ a.ui-button:active,
 
 .mouse-circle-mover-follow {
   position: fixed;
-  border: 1px solid #a5a743;
+  border: 1px solid #ffca28;
   width: 40px;
   height: 40px;
   left: -25px;
@@ -8108,6 +8108,10 @@ body.violet-home .back-btn {
   border-radius: 50%;
 }
 .contact-pg-section .office-info .office-info-item .office-info-icon .icon i {
+  font-size: 30px;
+  color: #f1f45d;
+}
+.contact-pg-section .office-info .office-info-item .office-info-icon .icon .fa-icon {
   font-size: 30px;
   color: #f1f45d;
 }

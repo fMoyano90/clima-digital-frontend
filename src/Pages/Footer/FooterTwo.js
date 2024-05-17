@@ -7,6 +7,13 @@ const FooterTwo = () => {
     e.preventDefault();
   };
 
+  const handleClick = () => {
+    const url = `https://wa.me/56974690241?text=${encodeURIComponent(
+      "Hola, estoy interesado en un servicio."
+    )}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <>
       <footer className='footer-section style-2'>
@@ -28,22 +35,12 @@ const FooterTwo = () => {
                     <ul>
                       <li>
                         <Link to='/'>
-                          <i className='ti-facebook'></i>
+                          <i className='ti-linkedin'></i>
                         </Link>
                       </li>
                       <li>
                         <Link to='/'>
                           <i className='ti-instagram'></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to='/'>
-                          <i className='ti-twitter-alt'></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to='/'>
-                          <i className='ti-pinterest'></i>
                         </Link>
                       </li>
                     </ul>
@@ -78,16 +75,12 @@ const FooterTwo = () => {
                   </div>
                   <div className='contact-ft'>
                     <ul>
-                      <li>
-                        <i className='icon-Group-7042'></i>+569 9555 0129
+                      <li onClick={handleClick}>
+                        <i className='icon-Group-7042'></i>+569 7469 0241
                       </li>
                       <li>
                         <i className='icon-Group-7043'></i>
-                        contacto@innovatec.com
-                      </li>
-                      <li>
-                        <i className='icon-Group-7044'></i>Yerbas Buenas #153,
-                        Los Andes
+                        contacto@climadigital.com
                       </li>
                     </ul>
                   </div>
@@ -128,7 +121,7 @@ const FooterTwo = () => {
                 <div className='copy-right'>
                   <p className='copyright'>
                     {" "}
-                    &copy; 2024 <Link to='/'>InnovaTec</Link>, Todos los
+                    &copy; 2024 <Link to='/'>Clima Digital</Link>, Todos los
                     derechos reservados.
                   </p>
                 </div>
@@ -136,10 +129,7 @@ const FooterTwo = () => {
               <div className='col col-lg-6 col-12'>
                 <ul className='lower-footer-link'>
                   <li>
-                    <Link to='/'>Términos y condiciones</Link>
-                  </li>
-                  <li>
-                    <Link to='/'>Política de Privacidad</Link>
+                    <Link to='/login'>Acceso Administrador</Link>
                   </li>
                 </ul>
               </div>

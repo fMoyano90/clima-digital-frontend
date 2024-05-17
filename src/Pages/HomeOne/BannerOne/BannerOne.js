@@ -64,13 +64,7 @@ const BannerOne = () => {
                   data-wow-duration='1600ms'
                 >
                   <Link to='/about' className='ch-btn-style-2'>
-                    Leer más
-                  </Link>
-                  <Link
-                    to='/service'
-                    className='ch-btn-style-1 ch-btn-animated'
-                  >
-                    Sobre nosotros
+                      Comencemos Ahora
                   </Link>
                 </div>
               </div>
