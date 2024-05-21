@@ -62,9 +62,9 @@ export default function Header({ variant }) {
                             </ul>
                           </DropDown>
                         </li> */}
-                        <li className='has-submenu'>
+                        {/* <li className='has-submenu'>
                           <NavLink to='/blog'>Blog</NavLink>
-                        </li>
+                        </li> */}
                         <li>
                           <NavLink to='/contacto'>Contacto</NavLink>
                         </li>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
-import { v4 as uuidv4 } from "uuid";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import axios from "axios";
 
 const AddPost = () => {
   const [title, setTitle] = useState("");
@@ -10,45 +10,76 @@ const AddPost = () => {
   const [authorId, setAuthorId] = useState("");
   const [categoryId, setCategoryId] = useState("");
   const [tags, setTags] = useState("");
+  const [smallBanner, setSmallBanner] = useState(null);
+  const [mediumBanner, setMediumBanner] = useState(null);
+  const [largeBanner, setLargeBanner] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleFileChange = (e, setBanner) => {
+    setBanner(e.target.files[0]);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const newPost = {
-      id: uuidv4(),
-      title,
-      content,
-      author_id: authorId,
-      category_id: categoryId,
-      tags: tags.split(",").map((tag) => tag.trim()),
-      created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString(),
-    };
-    console.log("New Post:", newPost);
-    // Aquí deberías enviar el nuevo post a tu backend
+    const formData = new FormData();
+    formData.append("title", title);
+    formData.append("content", content);
+    formData.append("authorId", authorId);
+    formData.append("categoryId", categoryId);
+    formData.append(
+      "tags",
+      tags.split(",").map((tag) => tag.trim())
+    );
+    formData.append("smallBanner", smallBanner);
+    formData.append("mediumBanner", mediumBanner);
+    formData.append("largeBanner", largeBanner);
+
+    try {
+      const response = await axios.post("/api/posts", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      console.log("Post uploaded successfully:", response.data);
+    } catch (error) {
+      console.error("Error uploading post:", error);
+    }
   };
 
   const modules = {
     toolbar: [
-      [{ 'header': '1'}, {'header': '2'}, { 'font': [] }],
-      [{size: []}],
-      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
-      [{'list': 'ordered'}, {'list': 'bullet'}, 
-       {'indent': '-1'}, {'indent': '+1'}],
-      ['link', 'image'],
-      ['clean']
+      [{ header: "1" }, { header: "2" }, { font: [] }],
+      [{ size: [] }],
+      ["bold", "italic", "underline", "strike", "blockquote"],
+      [
+        { list: "ordered" },
+        { list: "bullet" },
+        { indent: "-1" },
+        { indent: "+1" },
+      ],
+      ["link", "image"],
+      ["clean"],
     ],
   };
 
   const formats = [
-    'header', 'font', 'size',
-    'bold', 'italic', 'underline', 'strike', 'blockquote',
-    'list', 'bullet', 'indent',
-    'link', 'image'
+    "header",
+    "font",
+    "size",
+    "bold",
+    "italic",
+    "underline",
+    "strike",
+    "blockquote",
+    "list",
+    "bullet",
+    "indent",
+    "link",
+    "image",
   ];
 
   return (
     <Container>
-      <h2>Añadir Nuevo Post</h2>
+      <h2>Añadir un Nuevo Post</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId='title'>
           <Form.Label>Título</Form.Label>
@@ -106,8 +137,35 @@ const AddPost = () => {
           />
         </Form.Group>
 
+        <Form.Group controlId='smallBanner'>
+          <Form.Label>Banner Pequeño (82x92)</Form.Label>
+          <Form.Control
+            type='file'
+            onChange={(e) => handleFileChange(e, setSmallBanner)}
+            required
+          />
+        </Form.Group>
+
+        <Form.Group controlId='mediumBanner'>
+          <Form.Label>Banner Mediano (244x303)</Form.Label>
+          <Form.Control
+            type='file'
+            onChange={(e) => handleFileChange(e, setMediumBanner)}
+            required
+          />
+        </Form.Group>
+
+        <Form.Group controlId='largeBanner'>
+          <Form.Label>Banner Grande (850x462)</Form.Label>
+          <Form.Control
+            type='file'
+            onChange={(e) => handleFileChange(e, setLargeBanner)}
+            required
+          />
+        </Form.Group>
+
         <Button variant='primary' type='submit' className='mt-3'>
-          Añadir Post
+          Crear Post
         </Button>
       </Form>
     </Container>

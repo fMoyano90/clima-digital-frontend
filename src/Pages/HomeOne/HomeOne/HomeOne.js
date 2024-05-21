@@ -9,7 +9,7 @@ import AboutOne from "../AboutOne/AboutOne";
 import PortfoliosOne from "../PortfoliosOne/PortfoliosOne";
 import Testimonial from "../Testimonial/Testimonial";
 import SkillOne from "../SkillOne/SkillOne";
-import Blog from "../Blog/Blog";
+// import Blog from "../Blog/Blog";
 import { pageTitle } from "../../PageTitle";
 
 const HomeOne = () => {
@@ -25,7 +25,7 @@ const HomeOne = () => {
       <PortfoliosOne></PortfoliosOne>
       <Testimonial></Testimonial>
       <SkillOne></SkillOne>
-      <Blog></Blog>
+      {/* <Blog></Blog> */}
       <FooterOne></FooterOne>
     </>
   );
