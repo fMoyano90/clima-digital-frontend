@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Table, Pagination, Form, Button, Modal } from "react-bootstrap";
 import { FaEye, FaEdit, FaTrash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,11 +17,7 @@ const ContactsList = () => {
   const limit = 10; // Número de contactos por página
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchContactsData();
-  }, [page]);
-
-  const fetchContactsData = async () => {
+  const fetchContactsData = useCallback(async () => {
     try {
       const response = await fetchContacts(page, limit);
       setContacts(response.data.contacts);
@@ -29,7 +25,11 @@ const ContactsList = () => {
     } catch (error) {
       console.error(error);
     }
-  };
+  }, [page, limit]);
+
+  useEffect(() => {
+    fetchContactsData();
+  }, [page, fetchContactsData]);
 
   const handleStatusChange = async (id, status) => {
     try {
