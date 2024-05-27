@@ -53,12 +53,17 @@ const FooterTwo = () => {
                   </div>
                   <div className='contact-ft'>
                     <ul>
-                      <li onClick={handleClick}>
+                      <li onClick={handleClick} style={{ cursor: "pointer" }}>
                         <i className='icon-Group-7042'></i>+569 7469 0241
                       </li>
                       <li>
-                        <i className='icon-Group-7043'></i>
-                        contacto@climadigital.com
+                        <a
+                          href='mailto:contacto@climadigital.cl'
+                          style={{ color: "black" }}
+                        >
+                          <i className='icon-Group-7043'></i>
+                          contacto@climadigital.cl
+                        </a>
                       </li>
                     </ul>
                   </div>
