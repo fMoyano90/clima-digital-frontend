@@ -52,7 +52,7 @@ const SkillOne = () => {
           <div className='row justify-content-center'>
             <div className='col-xl-5 col-lg-8 col-12'>
               <div className='ch-top-title'>
-                <span>Otros Servicios</span>
+                <span>¿Porque elegirnos?</span>
                 <h2 className='site-split-text ch-split-in-right'>
                   Inspirados para conseguir buenos resultados
                 </h2>

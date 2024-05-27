@@ -5,7 +5,7 @@ import HeaderOne from "../Header/HeaderOne";
 import FooterTwo from "../Footer/FooterTwo";
 import AboutOne from "../HomeOne/AboutOne/AboutOne";
 import TextAnimationTwo from "../HomeOne/TextAnimationTwo/TextAnimationTwo";
-import ServicesTwo from "../HomeTwo/ServicesTwo/ServicesTwo";
+// import ServicesTwo from "../HomeTwo/ServicesTwo/ServicesTwo";
 import Testimonial from "../HomeOne/Testimonial/Testimonial";
 import PortfoliosOne from "../HomeOne/PortfoliosOne/PortfoliosOne";
 import AboutTwo from "../HomeTwo/AboutTwo/AboutTwo";
@@ -19,7 +19,7 @@ const About = () => {
       <BreadCrumb></BreadCrumb>
       <AboutOne></AboutOne>
       <TextAnimationTwo></TextAnimationTwo>
-      <ServicesTwo></ServicesTwo>
+      {/* <ServicesTwo></ServicesTwo> */}
       <Testimonial></Testimonial>
       <PortfoliosOne></PortfoliosOne>
       <AboutTwo></AboutTwo>

@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo2.png";
 
 const FooterOne = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   const handleClick = () => {
     const url = `https://wa.me/56974690241?text=${encodeURIComponent(
       "Hola, estoy interesado en un servicio."
@@ -27,26 +23,12 @@ const FooterOne = () => {
                       <img src={Logo} alt='' />
                     </Link>
                   </div>
-                  <div className='widget social-widget p-2'>
-                    <ul>
-                      <li>
-                        <Link to='/'>
-                          <i className='ti-linkedin'></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to='/'>
-                          <i className='ti-instagram'></i>
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
               <div className='col col-xl-3 col-lg-2 col-md-6 col-sm-12 col-12'>
                 <div className='widget link-widget'>
                   <div className='widget-title'>
-                    <h3>Nuestros servicios</h3>
+                    <h3>Servicios Destacados</h3>
                   </div>
                   <ul>
                     <li>
@@ -71,14 +53,18 @@ const FooterOne = () => {
                   </div>
                   <div className='contact-ft'>
                     <ul>
-                      <li onClick={handleClick}>
+                      <li onClick={handleClick} style={{ cursor: "pointer" }}>
                         <i className='icon-Group-7042'></i>+569 7469 0241
                       </li>
                       <li>
-                        <i className='icon-Group-7043'></i>
-                        contacto@climadigital.cl
+                        <a
+                          href='mailto:contacto@climadigital.cl'
+                          style={{ color: "black" }}
+                        >
+                          <i className='icon-Group-7043'></i>
+                          contacto@climadigital.cl
+                        </a>
                       </li>
-
                     </ul>
                   </div>
                 </div>
@@ -86,26 +72,22 @@ const FooterOne = () => {
               <div className='col col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12'>
                 <div className='widget subscribe'>
                   <div className='widget-title'>
-                    <h3>Suscribete a nuestro blog</h3>
+                    <h3>Síguenos</h3>
                   </div>
-                  <form
-                    action='contact'
-                    method='post'
-                    className='subscribe-form'
-                    onSubmit={handleSubmit}
-                  >
-                    <div className='form-field'>
-                      <input
-                        type='email'
-                        placeholder='Escribe tú e-mail'
-                        id='email'
-                        required
-                      />
-                      <button type='submit'>
-                        <i className='icon-flyer'></i>
-                      </button>
-                    </div>
-                  </form>
+                  <div className='widget social-widget p-2'>
+                    <ul>
+                      <li>
+                        <Link to='/'>
+                          <i className='ti-linkedin'></i>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to='/'>
+                          <i className='ti-instagram'></i>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

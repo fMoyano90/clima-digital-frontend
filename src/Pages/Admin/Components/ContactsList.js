@@ -1,64 +1,71 @@
 import React, { useEffect, useState } from "react";
-import { Table, Pagination, Form, Button } from "react-bootstrap";
+import { Table, Pagination, Form, Button, Modal } from "react-bootstrap";
 import { FaEye, FaEdit, FaTrash } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import {
+  fetchContacts,
+  updateContactStatus,
+  deleteContact,
+} from "../../../services/contactServices";
 
 const ContactsList = () => {
   const [contacts, setContacts] = useState([]);
   const [page, setPage] = useState(0);
+  const [totalPages, setTotalPages] = useState(1); // Total de páginas para la paginación
+  const [showModal, setShowModal] = useState(false);
+  const [selectedContactId, setSelectedContactId] = useState(null);
+  const limit = 10; // Número de contactos por página
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetchContacts();
+    fetchContactsData();
   }, [page]);
 
-  const fetchContacts = async () => {
-    // Mock data to simulate API response
-    const mockData = {
-      contacts: [
-        {
-          id: "1",
-          name: "John Doe",
-          company: "Company Inc.",
-          email: "johndoe@example.com",
-          phone: "923456789",
-          interestService: "Tienda Online",
-          message: "Hello, I am interested in your service.",
-          contactPreference: "Email",
-          preferredContactTime: "En la mañana",
-          referralSource: "Google",
-          contactStatus: "New",
-          internalNotes: "This is a test note.",
-        },
-        {
-          id: "2",
-          name: "Jane Smith",
-          company: "Another Company Inc.",
-          email: "janesmith@example.com",
-          phone: "987654321",
-          interestService: "Sistema Gestión",
-          message: "I would like more information about your service.",
-          contactPreference: "Celular",
-          preferredContactTime: "En la tarde",
-          referralSource: "Facebook",
-          contactStatus: "Contacted",
-          internalNotes: "Follow up next week.",
-        },
-        // Add more mock contacts as needed
-      ],
-      total: 2,
-    };
-
-    // Simulating network delay
-    setTimeout(() => {
-      setContacts(mockData.contacts);
-    }, 500);
+  const fetchContactsData = async () => {
+    try {
+      const response = await fetchContacts(page, limit);
+      setContacts(response.data.contacts);
+      setTotalPages(Math.ceil(response.data.total / limit));
+    } catch (error) {
+      console.error(error);
+    }
   };
 
-  const handleStatusChange = (id, status) => {
-    setContacts(
-      contacts.map((contact) =>
-        contact.id === id ? { ...contact, contactStatus: status } : contact
-      )
-    );
+  const handleStatusChange = async (id, status) => {
+    try {
+      await updateContactStatus(id, status.toUpperCase());
+      setContacts((prevContacts) =>
+        prevContacts.map((contact) =>
+          contact._id === id
+            ? { ...contact, contactStatus: status.toUpperCase() }
+            : contact
+        )
+      );
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleDeleteContact = async () => {
+    try {
+      await deleteContact(selectedContactId);
+      setContacts((prevContacts) =>
+        prevContacts.filter((contact) => contact._id !== selectedContactId)
+      );
+      setShowModal(false);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleShowModal = (id) => {
+    setSelectedContactId(id);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSelectedContactId(null);
   };
 
   return (
@@ -82,7 +89,7 @@ const ContactsList = () => {
         </thead>
         <tbody>
           {contacts.map((contact) => (
-            <tr key={contact.id}>
+            <tr key={contact._id}>
               <td>{contact.name}</td>
               <td>{contact.company}</td>
               <td>{contact.email}</td>
@@ -96,23 +103,35 @@ const ContactsList = () => {
                 <Form.Select
                   value={contact.contactStatus}
                   onChange={(e) =>
-                    handleStatusChange(contact.id, e.target.value)
+                    handleStatusChange(contact._id, e.target.value)
                   }
                 >
-                  <option value='New'>Nuevo</option>
-                  <option value='Contacted'>Contactado</option>
-                  <option value='Lead'>Interesado</option>
-                  <option value='Closed'>Cliente</option>
+                  <option value='NEW'>Nuevo</option>
+                  <option value='CONTACTED'>Contactado</option>
+                  <option value='LEAD'>Interesado</option>
+                  <option value='CLOSED'>Cliente</option>
                 </Form.Select>
               </td>
               <td className='d-flex justify-content-around'>
-                <Button variant='info' size='sm'>
+                <Button
+                  variant='info'
+                  size='sm'
+                  onClick={() => navigate(`/admin/contact/${contact._id}`)}
+                >
                   <FaEye />
                 </Button>
-                <Button variant='warning' size='sm'>
+                <Button
+                  variant='warning'
+                  size='sm'
+                  onClick={() => navigate(`/admin/edit-contact/${contact._id}`)}
+                >
                   <FaEdit />
                 </Button>
-                <Button variant='danger' size='sm'>
+                <Button
+                  variant='danger'
+                  size='sm'
+                  onClick={() => handleShowModal(contact._id)}
+                >
                   <FaTrash />
                 </Button>
               </td>
@@ -126,8 +145,28 @@ const ContactsList = () => {
           disabled={page === 0}
         />
         <Pagination.Item active>{page + 1}</Pagination.Item>
-        <Pagination.Next onClick={() => setPage(page + 1)} />
+        <Pagination.Next
+          onClick={() => setPage(page + 1)}
+          disabled={page >= totalPages - 1}
+        />
       </Pagination>
+
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Confirmar Eliminación</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          ¿Estás seguro de que deseas eliminar este contacto?
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant='secondary' onClick={handleCloseModal}>
+            Cancelar
+          </Button>
+          <Button variant='danger' onClick={handleDeleteContact}>
+            Eliminar
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };

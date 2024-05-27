@@ -1,13 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { pageTitle } from "../PageTitle";
-import BreadCrumb from "../BreadCrumb";
-import HeaderOne from "../Header/HeaderOne";
-import FooterTwo from "../Footer/FooterTwo";
-import { FaWhatsapp } from "react-icons/fa";
 
-const Contact = () => {
-  pageTitle("Contacto");
+const ContactHome = () => {
+  useEffect(() => {
+    const rightItems = document.querySelectorAll(
+      ".ch-service-right-wrap .item"
+    );
+    const leftItems = document.querySelectorAll(
+      ".service-image-group .service-image"
+    );
+
+    const handleHover = (index) => {
+      rightItems.forEach((item, i) => {
+        item.classList.remove("active");
+        if (i === index) item.classList.add("active");
+      });
+      leftItems.forEach((item, i) => {
+        item.classList.remove("active");
+        if (i === index) item.classList.add("active");
+      });
+    };
+
+    rightItems.forEach((rightItem, index) => {
+      rightItem.addEventListener("mouseenter", () => handleHover(index));
+    });
+
+    return () => {
+      rightItems.forEach((rightItem, index) => {
+        rightItem.removeEventListener("mouseenter", () => handleHover(index));
+      });
+    };
+  }, []);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -80,11 +103,8 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <HeaderOne />
-      <BreadCrumb />
-
-      <section className='contact-pg-section section-padding'>
+    <section className='ch-service-area ptb-120'>
+      <section className='contact-pg-section contact-home'>
         <div className='container'>
           <div className='row'>
             <div className='col col-lg-5 col-12'>
@@ -279,65 +299,10 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className='office-info ptb-120'>
-            <div className='row'>
-              <div className='col col-xl-4 col-lg-6 col-md-6 col-12'>
-                <div className='office-info-item' style={{ cursor: "pointer" }}>
-                  <a
-                    href='https://wa.me/56974690241'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <div className='office-info-icon'>
-                      <div className='icon'>
-                        <FaWhatsapp className='fa-icon' />
-                      </div>
-                    </div>
-                    <div className='office-info-text'>
-                      <h2>WhatsApp</h2>
-                      <p>Hablemos Ahora</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className='col col-xl-4 col-lg-6 col-md-6 col-12'>
-                <div className='office-info-item' style={{ cursor: "pointer" }}>
-                  <a href='mailto:contacto@climadigital.cl'>
-                    <div className='office-info-icon'>
-                      <div className='icon'>
-                        <i className='icon-Group-7043'></i>
-                      </div>
-                    </div>
-                    <div className='office-info-text'>
-                      <h2>E-mail</h2>
-                      <p>contacto@climadigital.cl</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className='col col-xl-4 col-lg-6 col-md-6 col-12'>
-                <div className='office-info-item' style={{ cursor: "pointer" }}>
-                  <a href='tel:+56974690241'>
-                    <div className='office-info-icon'>
-                      <div className='icon'>
-                        <i className='icon-Group-7042'></i>
-                      </div>
-                    </div>
-                    <div className='office-info-text'>
-                      <h2>LLámanos</h2>
-                      <p>+569 7469 0241</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
-
-      <FooterTwo />
-    </>
+    </section>
   );
 };
 
-export default Contact;
+export default ContactHome;

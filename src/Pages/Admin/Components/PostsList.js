@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Table, Pagination, Button } from "react-bootstrap";
 import { FaEye, FaEdit, FaTrash } from "react-icons/fa";
-import { v4 as uuidv4 } from 'uuid';
-import { useNavigate } from 'react-router-dom';
+import { v4 as uuidv4 } from "uuid";
+import { useNavigate } from "react-router-dom";
 
 const PostsList = () => {
   const [posts, setPosts] = useState([]);
@@ -49,13 +49,11 @@ const PostsList = () => {
   };
 
   return (
-    <div className="p-5">
-      <div className="d-flex justify-content-between align-items-center mb-3">
+    <div className='p-5'>
+      <div className='d-flex justify-content-between align-items-center mb-3'>
         <h2>Posts</h2>
-        
-        <Button
-              onClick={() => navigate('/admin/add-post')}
-            >Añadir Post</Button>
+
+        <Button onClick={() => navigate("/admin/add-post")}>Añadir Post</Button>
       </div>
       <Table striped bordered hover>
         <thead>
@@ -80,14 +78,18 @@ const PostsList = () => {
               <td>{post.tags ? post.tags.join(", ") : ""}</td>
               <td>{new Date(post.created_at).toLocaleDateString()}</td>
               <td>{new Date(post.updated_at).toLocaleDateString()}</td>
-              <td className="d-flex justify-content-around">
-                <Button variant="info" size="sm">
+              <td className='d-flex justify-content-around'>
+                <Button variant='info' size='sm'>
                   <FaEye />
                 </Button>
-                <Button variant="warning" size="sm" onClick={() => navigate(`/admin/edit-post/${post.id}`)}>
+                <Button
+                  variant='warning'
+                  size='sm'
+                  onClick={() => navigate(`/admin/edit-post/${post.id}`)}
+                >
                   <FaEdit />
                 </Button>
-                <Button variant="danger" size="sm">
+                <Button variant='danger' size='sm'>
                   <FaTrash />
                 </Button>
               </td>
