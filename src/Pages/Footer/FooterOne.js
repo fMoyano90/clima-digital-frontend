@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo2.png";
+import Logo from "../../assets/images/clima.svg";
 
 const FooterOne = () => {
   const handleClick = () => {
@@ -32,16 +32,16 @@ const FooterOne = () => {
                   </div>
                   <ul>
                     <li>
-                      <Link to='/'>Tiendas Online</Link>
+                      <Link to='/servicio/sitios-web-profesionales'>Sitios Web Profesionales</Link>
                     </li>
                     <li>
-                      <Link to='/'>Desarrollo Web</Link>
+                      <Link to='/servicio/tiendas-online'>Tientas Virtuales</Link>
                     </li>
                     <li>
-                      <Link to='/'>Diseño UX/UI</Link>
+                      <Link to='/servicio/sistemas-gestion'>Sistemas de Gestión</Link>
                     </li>
                     <li>
-                      <Link to='/'>Marketing Digital</Link>
+                      <Link to='/servicio/apps-moviles'>Apps Móviles</Link>
                     </li>
                   </ul>
                 </div>

@@ -90,14 +90,18 @@ const Contact = () => {
             <div className='col col-lg-5 col-12'>
               <div className='contact-title'>
                 <div className='ch-top-title-s3'>
-                  <span>CONTÁCTENOS</span>
-                  <h2 className='site-split-text ch-split-in-right'>
-                    Elevate your brand with a the
+                  <span className="testimonial">CONTÁCTENOS</span>
+                  <h2 className='site-split-text ch-split-in-right testimonial'>
+                    Impulsa tu negocio con soluciones tecnológicas innovadoras
                   </h2>
                   <p>
-                    ished fact that a reader will be distrol acted bioiiy desig
-                    ished fact that a reader will acted ished fact that a reader
-                    will be distrol acted
+                    En nuestra agencia de desarrollo de software, nos
+                    especializamos en convertir tus ideas en soluciones
+                    tecnológicas efectivas. Desde tiendas en línea y sistemas de
+                    gestión hasta aplicaciones móviles y soluciones a medida,
+                    contamos con la experiencia para potenciar tu negocio.
+                    Completa el formulario y comencemos a trabajar juntos en tu
+                    proyecto.
                   </p>
                 </div>
               </div>

@@ -96,7 +96,7 @@
 
     .about-widget {
         .logo {
-            max-width: 180px;
+            max-width: 160px;
             margin-bottom: 30px;
         }
 
@@ -177,7 +177,28 @@
                     height: 40px;
                     line-height: 40px;
                     text-align: center;
-                    border: 1px solid rgba(0, 0, 0, 0.10);
+                    border: 1px solid rgba(0,0,0,0.5);
+                    border-radius: 50%;
+
+                    &:hover {
+                        background: $project-primary-color-s2;
+                        color: $white;
+                    }
+                }
+
+                &+li {
+                    margin-left: 10px;
+                }
+            }
+            li.footer-2 {
+                a {
+                    color: $main-heading-color;
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border: 1px solid rgb(255, 255, 255) !important;
                     border-radius: 50%;
 
                     &:hover {
@@ -372,11 +393,39 @@
                 display: block;
             }
         }
+        .copyright.footer-2 {
+            display: inline-block;
+            font-size: 14px;
+            margin: 0;
+            color: white;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            @media (max-width: 991px) {
+                float: none;
+                display: block;
+            }
+        }
     }
 
 
     &.style-2 {
-        background: #FBF3F2;
+        background: #5204AD;
+        h3{
+
+            color: white !important;
+        }
+        li a{
+
+            color: white !important;
+        }
+        li{
+
+            color: white !important;
+        }
     }
 
 }

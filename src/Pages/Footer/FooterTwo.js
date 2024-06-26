@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo2.png";
+import Logo from "../../assets/images/logo-white.svg";
 
 const FooterTwo = () => {
   const handleClick = () => {
@@ -32,16 +32,22 @@ const FooterTwo = () => {
                   </div>
                   <ul>
                     <li>
-                      <Link to='/'>Tiendas Online</Link>
+                      <Link to='/servicio/sitios-web-profesionales'>
+                        Sitios Web Profesionales
+                      </Link>
                     </li>
                     <li>
-                      <Link to='/'>Desarrollo Web</Link>
+                      <Link to='/servicio/tiendas-online'>
+                        Tientas Virtuales
+                      </Link>
                     </li>
                     <li>
-                      <Link to='/'>Diseño UX/UI</Link>
+                      <Link to='/servicio/sistemas-gestion'>
+                        Sistemas de Gestión
+                      </Link>
                     </li>
                     <li>
-                      <Link to='/'>Marketing Digital</Link>
+                      <Link to='/servicio/apps-moviles'>Apps Móviles</Link>
                     </li>
                   </ul>
                 </div>
@@ -76,12 +82,12 @@ const FooterTwo = () => {
                   </div>
                   <div className='widget social-widget p-2'>
                     <ul>
-                      <li>
+                      <li className='footer-2'>
                         <Link to='/'>
                           <i className='ti-linkedin'></i>
                         </Link>
                       </li>
-                      <li>
+                      <li className='footer-2'>
                         <Link to='/'>
                           <i className='ti-instagram'></i>
                         </Link>
@@ -98,7 +104,7 @@ const FooterTwo = () => {
             <div className='row align-items-center'>
               <div className='col col-lg-6 col-12'>
                 <div className='copy-right'>
-                  <p className='copyright'>
+                  <p className='copyright footer-2'>
                     {" "}
                     &copy; 2024 <Link to='/'>Clima Digital</Link>, Todos los
                     derechos reservados.

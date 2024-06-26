@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import WOW from "wowjs";
+import img from "../../../assets/images/adaptation.svg";
+import img1 from "../../../assets/images/scalability.svg";
+import img2 from "../../../assets/images/transparency.svg";
+import img3 from "../../../assets/images/scrum.svg";
+import img4 from "../../../assets/images/ai.svg";
+import img5 from "../../../assets/images/support.svg";
 
 const SkillOne = () => {
   useEffect(() => {
@@ -12,47 +18,11 @@ const SkillOne = () => {
   return (
     <section className='ch-skill-area ptb-120'>
       <div className='container'>
-        <div className='funfact-area ptb-120 pt-0'>
-          <div className='row align-items-center'>
-            <div className='col-lg-3 col-md-6 col-12'>
-              <div className='info wow fadeInUp' data-wow-duration='1000ms'>
-                <p>Premios Obtenidos</p>
-                <h3>
-                  <CountUp className='odometer' start={0} end={200} />+
-                </h3>
-              </div>
-            </div>
-            <div className='col-lg-3 col-md-6 col-12'>
-              <div className='info wow fadeInUp' data-wow-duration='1200ms'>
-                <p>Proyectos Terminados</p>
-                <h3>
-                  <CountUp className='odometer' start={0} end={650} />+
-                </h3>
-              </div>
-            </div>
-            <div className='col-lg-3 col-md-6 col-12'>
-              <div className='info wow fadeInUp' data-wow-duration='1400ms'>
-                <p>Clientes Felices</p>
-                <h3>
-                  <CountUp className='odometer' start={0} end={120} />+
-                </h3>
-              </div>
-            </div>
-            <div className='col-lg-3 col-md-6 col-12'>
-              <div className='info wow fadeInUp' data-wow-duration='1400ms'>
-                <p>Reseñas de Clientes</p>
-                <h3>
-                  <CountUp className='odometer' start={0} end={210} />+
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className='ch-title-wrap'>
           <div className='row justify-content-center'>
             <div className='col-xl-5 col-lg-8 col-12'>
               <div className='ch-top-title'>
-                <span>¿Porque elegirnos?</span>
+                <span class="why">¿Por qué elegirnos?</span>
                 <h2 className='site-split-text ch-split-in-right'>
                   Inspirados para conseguir buenos resultados
                 </h2>
@@ -75,13 +45,14 @@ const SkillOne = () => {
                 data-wow-duration='1000ms'
               >
                 <div className='skill-icon'>
-                  <i className='icon-wordpress-logo'></i>
+                  <img src={img} alt='' />
                 </div>
                 <div className='skill-text'>
-                  <h3>Personalización UX/UI</h3>
+                  <h3>Adaptabilidad Personalizada</h3>
                   <p>
-                    Nulla vitae ex nunc.quis purus convallis, fermentum me
-                    volutpat, sodales purus. Nunc quis mauris
+                    Nos ajustamos a las necesidades específicas de cada cliente,
+                    ofreciendo soluciones a medida que evolucionan con tu
+                    negocio.
                   </p>
                 </div>
               </div>
@@ -92,13 +63,14 @@ const SkillOne = () => {
                 data-wow-duration='1200ms'
               >
                 <div className='skill-icon'>
-                  <i className='icon-Java-logo'></i>
+                  <img src={img1} alt='' />
                 </div>
                 <div className='skill-text'>
-                  <h3>Integraciones de Terceros</h3>
+                  <h3>Escalabilidad Garantizada</h3>
                   <p>
-                    Nulla vitae ex nunc.quis purus convallis, fermentum me
-                    volutpat, sodales purus. Nunc quis mauris
+                    Nuestras soluciones están diseñadas para crecer contigo,
+                    permitiendo expansiones y mejoras sin problemas a medida que
+                    tu negocio se desarrolla.
                   </p>
                 </div>
               </div>
@@ -109,13 +81,15 @@ const SkillOne = () => {
                 data-wow-duration='1400ms'
               >
                 <div className='skill-icon'>
-                  <i className='icon-php-logo'></i>
+                  <img src={img2} alt='' />
                 </div>
                 <div className='skill-text'>
-                  <h3>Desarrollo Continuo</h3>
+                  <h3>Transparencia Total</h3>
                   <p>
-                    Nulla vitae ex nunc.quis purus convallis, fermentum me
-                    volutpat, sodales purus. Nunc quis mauris
+                    Mantenemos un proceso transparente donde el cliente
+                    participa activamente en cada etapa del desarrollo,
+                    asegurando que el producto final cumpla con sus
+                    expectativas.
                   </p>
                 </div>
               </div>
@@ -126,13 +100,14 @@ const SkillOne = () => {
                 data-wow-duration='1000ms'
               >
                 <div className='skill-icon'>
-                  <i className='icon-Adobe-Illustrator-logo'></i>
+                  <img src={img3} alt='' />
                 </div>
                 <div className='skill-text'>
-                  <h3>Documentación Técnica</h3>
+                  <h3>Metodologías Ágiles</h3>
                   <p>
-                    Nulla vitae ex nunc.quis purus convallis, fermentum me
-                    volutpat, sodales purus. Nunc quis mauris
+                    Utilizamos metodologías ágiles para garantizar entregas
+                    rápidas y eficientes, permitiendo ajustes continuos y
+                    mejorando la colaboración entre nuestro equipo y el cliente.
                   </p>
                 </div>
               </div>
@@ -143,13 +118,14 @@ const SkillOne = () => {
                 data-wow-duration='1200ms'
               >
                 <div className='skill-icon'>
-                  <i className='icon-Adobe-XD-logo'></i>
+                  <img src={img4} alt='' />
                 </div>
                 <div className='skill-text'>
-                  <h3>Asesorías y Formación</h3>
+                  <h3>Innovación con IA</h3>
                   <p>
-                    Nulla vitae ex nunc.quis purus convallis, fermentum me
-                    volutpat, sodales purus. Nunc quis mauris
+                    Incorporamos inteligencia artificial en nuestros procesos
+                    para optimizar el desarrollo, mejorar la calidad y ofrecer
+                    soluciones innovadoras y competitivas.
                   </p>
                 </div>
               </div>
@@ -160,13 +136,14 @@ const SkillOne = () => {
                 data-wow-duration='1400ms'
               >
                 <div className='skill-icon'>
-                  <i className='icon-Figma-logo'></i>
+                  <img src={img5} alt='' />
                 </div>
                 <div className='skill-text'>
-                  <h3>Soporte y Mantención</h3>
+                  <h3>Soporte Continuo</h3>
                   <p>
-                    Nulla vitae ex nunc.quis purus convallis, fermentum me
-                    volutpat, sodales purus. Nunc quis mauris
+                    Ofrecemos soporte y mantenimiento constantes, asegurándonos
+                    de que tus soluciones digitales se mantengan actualizadas y
+                    funcionando de manera óptima en todo momento.
                   </p>
                 </div>
               </div>

@@ -6,6 +6,7 @@
 
 .ch-main-hero,
 .ch-main-hero-s2 {
+    height: 100vh;
     padding: 120px 70px;
     padding-bottom: 100px;
     background: $project-primary-color-s2;
@@ -27,6 +28,21 @@
         z-index: -1;
     }
 
+    .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -2; /* Asegúrate de que el video esté detrás del contenido y del ::before pseudo-element */
+    }
+
+    .video-background video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
     @media (max-width: 991px) {
         padding: 100px 0;
@@ -42,8 +58,7 @@
 
     .ch-main-hero-text {
         position: relative;
-
-        padding-top: 60px;
+        padding-top: 110px;
 
         @media (max-width: 991px) {
             text-align: center;
@@ -162,7 +177,7 @@
         position: absolute;
         max-width: 198px;
         right: 0;
-        bottom: 150px;
+        bottom: -30px;
 
         @media (max-width: 575px) {
             display: none;

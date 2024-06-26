@@ -27,8 +27,8 @@ const TestimonialsSection = () => {
           <div className='col-lg-6 col-md-12'>
             <div className='testimonial-left'>
               <div className='ch-top-title-s3'>
-                <span>TESTIMONIO DE CLIENTES</span>
-                <h2 className='site-split-text ch-split-in-right'>
+                <span className='testimonial'>TESTIMONIO DE CLIENTES</span>
+                <h2 className='site-split-text ch-split-in-right testimonial'>
                   TÚ ÉXITO ES NUESTRA MAYOR MOTIVACIÓN
                 </h2>
               </div>

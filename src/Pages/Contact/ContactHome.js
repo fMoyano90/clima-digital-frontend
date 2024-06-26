@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import backgroundVideo from "../../assets/images/131735-751029898_small.mp4"; // Asegúrate de que la ruta sea correcta
 
 const ContactHome = () => {
   useEffect(() => {
@@ -104,6 +105,12 @@ const ContactHome = () => {
 
   return (
     <section className='ch-service-area ptb-120'>
+      <div className='video-background'>
+        <video autoPlay muted loop>
+          <source src={backgroundVideo} type='video/mp4' />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <section className='contact-pg-section contact-home'>
         <div className='container'>
           <div className='row'>
@@ -112,12 +119,16 @@ const ContactHome = () => {
                 <div className='ch-top-title-s3'>
                   <span>CONTÁCTENOS</span>
                   <h2 className='site-split-text ch-split-in-right'>
-                    Elevate your brand with a the
+                    Impulsa tu negocio con soluciones tecnológicas innovadoras
                   </h2>
                   <p>
-                    ished fact that a reader will be distrol acted bioiiy desig
-                    ished fact that a reader will acted ished fact that a reader
-                    will be distrol acted
+                    En nuestra agencia de desarrollo de software, nos
+                    especializamos en convertir tus ideas en soluciones
+                    tecnológicas efectivas. Desde tiendas en línea y sistemas de
+                    gestión hasta aplicaciones móviles y soluciones a medida,
+                    contamos con la experiencia para potenciar tu negocio.
+                    Completa el formulario y comencemos a trabajar juntos en tu
+                    proyecto.
                   </p>
                 </div>
               </div>

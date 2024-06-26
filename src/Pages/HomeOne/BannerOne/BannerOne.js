@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import img_1 from "../../../assets/images/hero/innova-hero.gif";
 import WOW from "wowjs";
+import backgroundVideo from "../../../assets/images/213616_small.mp4"; // Asegúrate de que la ruta sea correcta
+
+const styles = {
+  subTitulo: {
+    color: "#fff !important",
+  },
+};
 
 const BannerOne = () => {
   useEffect(() => {
@@ -25,7 +31,6 @@ const BannerOne = () => {
 
     if (btnHoverAll) {
       btnHoverAll.forEach((btn) => {
-        // Check if there's already a span tag, if not, create one
         if (!btn.querySelector("span")) {
           const newSpan = document.createElement("span");
           btn.appendChild(newSpan);
@@ -45,42 +50,47 @@ const BannerOne = () => {
 
   return (
     <section className='ch-main-hero'>
+      <div className='video-background'>
+        <video autoPlay muted loop>
+          <source src={backgroundVideo} type='video/mp4' />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div className='container'>
         <div className='ch-main-hero-wrap'>
           <div className='row align-items-center'>
             <div className='col-xl-10 col-lg-10 col-12'>
               <div className='ch-main-hero-text'>
                 <h2 className='site-split-text ch-split-in-left'>
-                  Empoderando tu mundo digital
+                  Brilla en el Firmamento Digital
                 </h2>
+                <h3
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    marginBottom: "20px",
+                  }}
+                >
+                  Transformamos tu visión en realidad con soluciones digitales
+                  innovadoras
+                </h3>
                 <p className='wow fadeInUp' data-wow-duration='1400ms'>
-                  Acompañamos a cada cliente en su camino hacia el éxito en
-                  línea, proporcionando las herramientas necesarias, asesorías
-                  continuas y desarrollos personalizados para expandir sus
-                  capacidades.
+                  No dejes que las nubes oscurezcan tu camino. Contáctanos hoy y
+                  descubre cómo podemos ayudarte a alcanzar tus objetivos
+                  digitales con claridad y confianza.
                 </p>
                 <div
                   className='hero-btn wow fadeInUp'
                   data-wow-duration='1600ms'
                 >
                   <Link to='/about' className='ch-btn-style-2'>
-                      Comencemos Ahora
+                    Comencemos Ahora
                   </Link>
                 </div>
               </div>
             </div>
-            <div className='col-xl-9 col-lg-10 vh-75'>
-              <div className='right-image'>
-                <div
-                  className='right-image-mask wow fadeInUp'
-                  data-wow-duration='1200ms'
-                >
-                  <img src={img_1} alt='' />
-                </div>
-              </div>
-            </div>
           </div>
-          <div className='poligon-wrap wow zoomIn' data-wow-duration='1200ms'>
+          {/* <div className='poligon-wrap wow zoomIn' data-wow-duration='1200ms'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='198'
@@ -106,7 +116,7 @@ const BannerOne = () => {
                 <span>Años de experiencia</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

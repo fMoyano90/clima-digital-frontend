@@ -8,7 +8,10 @@ import {
 import HomeOne from "./Pages/HomeOne/HomeOne/HomeOne";
 import About from "./Pages/About/About";
 import Services from "./Pages/Services/Services";
-import ServiceSingle from "./Pages/ServiceSingle/ServiceSingle";
+import ServiceOne from "./Pages/ServiceSingle/ServiceOne";
+import ServiceTwo from "./Pages/ServiceSingle/ServiceTwo";
+import ServiceThree from "./Pages/ServiceSingle/ServiceThree";
+import ServiceFour from "./Pages/ServiceSingle/ServiceFour";
 import Contact from "./Pages/Contact/Contact";
 // import BlogRightSidebar from "./Pages/BlogRightSidebar/BlogRightSidebar";
 // import BlogSingle from "./Pages/BlogSingle/BlogSingle";
@@ -22,8 +25,11 @@ function App() {
         <Routes>
           <Route path='/' element={<HomeOne />} />
           <Route path='/nosotros' element={<About />} />
-          <Route path='/servicios' element={<Services />} />
-          <Route path='/service-single' element={<ServiceSingle />} />
+          {/* <Route path='/servicios' element={<Services />} /> */}
+          <Route path='/servicio/sitios-web-profesionales' element={<ServiceOne />} />
+          <Route path='/servicio/tiendas-online' element={<ServiceTwo />} />
+          <Route path='/servicio/sistemas-gestion' element={<ServiceThree />} />
+          <Route path='/servicio/apps-moviles' element={<ServiceFour/>} />
           <Route path='/contacto' element={<Contact />} />
           {/* <Route path='/blog' element={<BlogRightSidebar />} /> */}
           {/* <Route path='/blog-single' element={<BlogSingle />} /> */}

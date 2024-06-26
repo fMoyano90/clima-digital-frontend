@@ -1,6 +1,7 @@
 .ch-btn-style-1,
 .ch-btn-style-2,
 .ch-btn-style-3 {
+	margin-top: 50px;
 	background: transparent;
 	color: $white;
 	display: inline-block;
@@ -17,7 +18,7 @@
 	text-transform: uppercase;
 	font-family: $heading-font;
 	border: 1px solid $project-primary-color;
-	border-radius: 5px;
+	border-radius: 15px;
 	position: relative;
 	overflow: hidden;
 

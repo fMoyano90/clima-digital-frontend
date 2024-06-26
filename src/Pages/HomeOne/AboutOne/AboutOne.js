@@ -64,15 +64,15 @@ const About = () => {
                 <div className='about-right-text'>
                   <span>SOBRE NOSOTROS</span>
                   <h2 className='site-split-text ch-split-in-right'>
-                    Conectando ideas,
-                    <br /> creando futuro
+                    Innovando juntos,
+                    <br /> creando el mañana
                   </h2>
                   <p>
-                    Trabajamos para proveer a las pequeñas y medianas empresas
-                    soluciones de digitales de alta calidad y fácil
-                    adaptabilidad, utilizando tecnologías modernas para asegurar
-                    plataformas robustas y escalables, que puedan crecer con sus
-                    necesidades exclusivas.
+                    Somos una empresa apasionada por empoderar a empresas y
+                    emprendedores con soluciones digitales personalizadas.
+                    Inyectamos creatividad e ingenio en cada proyecto para
+                    impulsar el crecimiento y éxito de nuestros clientes en el
+                    cambiante panorama digital.
                   </p>
                   <div className='about-features-wrap'>
                     <div className='row'>

@@ -14,47 +14,61 @@
 	}
 
 	span {
-		font-size: 18px;
+		font-size: 48px;
 		font-style: normal;
 		font-weight: 700;
-		line-height: 27px;
+		line-height: 36px;
 		letter-spacing: 4px;
 		text-transform: uppercase;
 		color: $project-primary-color;
 		font-family: $heading-font;
-
+		
 		@media(max-width:767px) {
 			font-size: 15px;
 			letter-spacing: 4px;
 		}
 	}
-
+	span.why{
+		line-height: 56px;
+	}
+	span.testimonial {
+		font-size: 18px;
+		@media(max-width:767px) {
+			font-size: 15px;
+			letter-spacing: 4px;
+		}
+	}
+	
 	h2 {
-		font-size: 48px;
+		font-size: 24px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 60px;
 		color: $white;
 		margin-top: 5px;
-
+		
 		@include media-query(1199px) {
 			font-size: 40px;
 			line-height: 50px;
 		}
-
+		
 		@include media-query(991px) {
 			font-size: 35px;
 			line-height: 40px;
 		}
-
+		
 		small {
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			-webkit-text-stroke: 1px #1F212D;
 		}
-
+		
 	}
-
+	h2.testimonial {
+		font-size: 48px;
+		margin-top: 20px !important;
+	}
+	
 	p {
 		font-size: 18px;
 	}

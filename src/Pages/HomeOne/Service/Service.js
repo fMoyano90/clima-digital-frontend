@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import WOW from "wowjs";
-import './Service.css';
+import img1 from "../../../assets/images/website-01.svg";
+import img2 from "../../../assets/images/e-commerce-01.svg";
+import img3 from "../../../assets/images/management-system-01.svg";
+import img4 from "../../../assets/images/app-mobile-01.svg";
+import "./Service.css";
 
 const Service = () => {
   useEffect(() => {
@@ -12,57 +16,43 @@ const Service = () => {
   const servicesData = [
     {
       id: 1,
-      title: "Tiendas Virtuales",
+      title: "Sitios Web Profesionales",
       description:
-        "Purus velit aenean quis habitant eros the a bibendum aenean quis habit aeros who ath bibendumPurus velit aenean",
+        "Desarrollamos sitios web a medida, optimizados y responsivos que representan la identidad de tu marca y ofrecen una experiencia de usuario excepcional.",
       icon: "icon-sicon1",
       href: "/service-single",
       time: "1000ms",
+      img: img1,
     },
     {
       id: 2,
-      title: "Plataformas de Reserva",
+      title: "Tiendas Virtuales",
       description:
-        "Purus velit aenean quis habitant eros the a bibendum aenean quis habit aeros who ath bibendumPurus velit aenean",
+        "Creamos plataformas de ecommerce que no solo son visualmente atractivas, sino también altamente funcionales y seguras, facilitando la gestión y el crecimiento de tu tienda online.",
       icon: "icon-sicon2",
       href: "/service-single",
       time: "1200ms",
+      img: img2,
     },
     {
       id: 3,
-      title: "Desarrollos Personalizados",
+      title: "Sistemas de Gestión",
       description:
-        "Purus velit aenean quis habitant eros the a bibendum aenean quis habit aeros who ath bibendumPurus velit aenean",
+        "Optimiza tus procesos empresariales con nuestros sistemas de gestión personalizados. Simplifica la administración de recursos y mejora la eficiencia operativa de tu negocio.",
       icon: "icon-sicon3",
       href: "/service-single",
       time: "1400ms",
+      img: img3,
     },
     {
-      id: 1,
-      title: "Mantenimiento y Soporte",
+      id: 4,
+      title: "Apps Móviles",
       description:
-        "Purus velit aenean quis habitant eros the a bibendum aenean quis habit aeros who ath bibendumPurus velit aenean",
+        "Desarrollamos aplicaciones móviles innovadoras que ofrecen una experiencia de usuario excepcional. Nuestras apps están diseñadas para impulsar la interacción y satisfacer las necesidades de tus clientes.",
       icon: "icon-sicon4",
       href: "/service-single",
       time: "1000ms",
-    },
-    {
-      id: 2,
-      title: "Diseño UI / UX",
-      description:
-        "Purus velit aenean quis habitant eros the a bibendum aenean quis habit aeros who ath bibendumPurus velit aenean",
-      icon: "icon-sicon5",
-      href: "/service-single",
-      time: "1200ms",
-    },
-    {
-      id: 3,
-      title: "Marketing Digital",
-      description:
-        "Purus velit aenean quis habitant eros the a bibendum aenean quis habit aeros who ath bibendumPurus velit aenean",
-      icon: "icon-sicon6",
-      href: "/service-single",
-      time: "1400ms",
+      img: img4,
     },
   ];
   return (
@@ -70,32 +60,31 @@ const Service = () => {
       <div className='container'>
         <div className='service-wrap'>
           <span>DESTACADOS</span>
-          <h2 className='site-split-text ch-split-in-right pb-5'>Servicios Que Te Llevaran a las Nubes ☁️</h2>
+          <h2 className='site-split-text ch-split-in-right pb-5'>
+            Servicios Que Te Llevaran a las Nubes ☁️
+          </h2>
           <div className='row'>
             {servicesData.map((item, id) => (
-              <div className='col col-lg-4 col-md-6 col-12' key={id}>
+              <div className='col col-lg-3 col-md-6 col-12' key={id}>
                 <div
                   className='service-item wow fadeInUp'
                   data-wow-duration={item.time}
                 >
                   <div className='service-text'>
-                    <div className='icon'>
-                      <i className={item.icon}></i>
+                    <div class='icon-img'>
+                      <img src={item.img} alt='' />
                     </div>
                     <h3>
                       <Link to={item.href}>{item.title}</Link>
                     </h3>
                     <p>{item.description}</p>
                     <Link to={item.href} className='read-more'>
-                      Leer más
+                      Descubre más
                     </Link>
                   </div>
                 </div>
               </div>
             ))}
-          </div>
-          <div className="text-center wow fadeInUp">
-            <button className="view-services-button">VER TODOS LOS SERVICIOS</button>
           </div>
         </div>
       </div>
