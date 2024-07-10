@@ -1,3 +1,3 @@
 export const pageTitle = (title) => {
-    return ( document.title = title + " - Creative Agency Portfolio React Template");
+    return ( document.title = title + " - Desarrollo de soluciones digitales");
   }

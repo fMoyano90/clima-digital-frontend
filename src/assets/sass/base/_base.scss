@@ -451,3 +451,9 @@ body.dark-page {
 		transform: translateY(0px);
 	}
 }
+
+.only-desktop {
+    @media(max-width:991px) {
+        display: none;
+    }
+}

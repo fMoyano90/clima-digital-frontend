@@ -3,12 +3,6 @@ import { Link } from "react-router-dom";
 import WOW from "wowjs";
 import backgroundVideo from "../../../assets/images/213616_small.mp4"; // Asegúrate de que la ruta sea correcta
 
-const styles = {
-  subTitulo: {
-    color: "#fff !important",
-  },
-};
-
 const BannerOne = () => {
   useEffect(() => {
     new WOW.WOW({
@@ -62,19 +56,19 @@ const BannerOne = () => {
             <div className='col-xl-10 col-lg-10 col-12'>
               <div className='ch-main-hero-text'>
                 <h2 className='site-split-text ch-split-in-left'>
-                  Innovación Digital <br/>a tu Alcance
+                  Innovación Digital <br />a tu Alcance
                 </h2>
                 <h3
                   style={{
                     color: "white",
                     fontWeight: "bold",
                     marginBottom: "20px",
-                    fontSize: "32px"
+                    fontSize: "32px",
                   }}
                 >
                   Soluciones Digitales Personalizadas para tu Negocio
                 </h3>
-      n         {/* <p className='wow fadeInUp' data-wow-duration='1400ms'>
+                {/* <p className='wow fadeInUp' data-wow-duration='1400ms'>
                   No dejes que las nubes oscurezcan tu camino. Contáctanos hoy y
                   descubre cómo podemos ayudarte a alcanzar tus objetivos
                   digitales con claridad y confianza.

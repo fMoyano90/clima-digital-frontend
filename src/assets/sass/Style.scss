@@ -421,6 +421,12 @@ button.modal-video-close-btn {
 }
 
 
+.only-desktop {
+  @media(max-width:991px) {
+      display: none;
+  }
+}
+
 
 // helpers
 @import "./helpers/variables.scss";

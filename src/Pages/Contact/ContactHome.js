@@ -290,7 +290,7 @@ const ContactHome = () => {
                     <div className='col-md-12 col-12'>
                       <div className='submit-area'>
                         <button type='submit' className='ch-btn-style-2'>
-                          <span>Agendar Reunión Ahora</span>
+                          <span>Agendar Reunión</span>
                         </button>
                         {loading && (
                           <div id='loader'>

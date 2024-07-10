@@ -16,7 +16,7 @@ const BreadCrumb = () => {
                   ? pathnames[pathnames.length - 1].replaceAll("-", " ")
                   : "Home"}
               </h2>
-              <ol>
+              <ol className="only-desktop">
                 <li>
                   <Link to='/'>
                     <i className='icon-36'></i> Inicio

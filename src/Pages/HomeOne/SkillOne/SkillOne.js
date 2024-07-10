@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import CountUp from "react-countup";
 import WOW from "wowjs";
 import img from "../../../assets/images/adaptation.svg";
 import img1 from "../../../assets/images/scalability.svg";

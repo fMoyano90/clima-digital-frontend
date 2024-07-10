@@ -3566,6 +3566,9 @@ body.dark-page .mouse-circle-mover-follow {
   .ch-portfolio-area {
     padding-bottom: 0;
   }
+  .only-desktop {
+    display: none;
+  }
 }
 @media (max-width: 575px) {
   .ch-portfolio-area {

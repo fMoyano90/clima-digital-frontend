@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import CountUp from "react-countup";
 import BannerBg from "../../../assets/images/about/arrow-shape.png";
-import AboutUs from "../../../assets/images/about/about-1.jpg";
-import img2 from "../../../assets/images/about/about-2.jpg";
+import AboutUs from "../../../assets/images/aym-275x331.png";
+import img2 from "../../../assets/images/universo-280x325.png";
 import WOW from "wowjs";
 
 const About = () => {
@@ -46,11 +45,9 @@ const About = () => {
                   <div className='right-text'>
                     <i className='icon-medal'></i>
                     <div className='experience-text-right'>
-                      <h3>
-                        <CountUp start={0} end={250} />
-                        <span>+</span>
-                      </h3>
-                      <span>Proyectos Completados</span>
+                      <span>
+                        Soluciones únicas para cada cliente
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -82,7 +79,7 @@ const About = () => {
                           data-wow-duration='1600ms'
                         >
                           <i className='icon-sicon4'></i>
-                          <h4>Soluciones Personalizadas</h4>
+                          <h4>Atención Personalizada</h4>
                         </div>
                       </div>
                       <div className='col-lg-6 col-sm-6 col-12'>
@@ -91,7 +88,7 @@ const About = () => {
                           data-wow-duration='1800ms'
                         >
                           <i className='icon-sicon6'></i>
-                          <h4>Diseños innovadores</h4>
+                          <h4>Soluciones Innovadoras</h4>
                         </div>
                       </div>
                     </div>

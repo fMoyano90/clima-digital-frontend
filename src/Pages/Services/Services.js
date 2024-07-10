@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import WOW from "wowjs";
 
 const Services = () => {
-  pageTitle("Services");
+  pageTitle("Servicios");
 
   useEffect(() => {
     new WOW.WOW({

@@ -3,7 +3,6 @@ import { pageTitle } from "../PageTitle";
 import BreadCrumb from "../BreadCrumb";
 import HeaderOne from "../Header/HeaderOne";
 import FooterTwo from "../Footer/FooterTwo";
-import { Link } from "react-router-dom";
 import WOW from "wowjs";
 import axios from "axios";
 
@@ -11,7 +10,7 @@ import img1 from "../../assets/images/thermometer-01.svg";
 import "./ServiceSingle.css";
 
 const Services = () => {
-  pageTitle("Services");
+  pageTitle("Servicios");
 
   useEffect(() => {
     new WOW.WOW({
@@ -173,7 +172,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 offset-1'>
+            <div className='col-lg-4 offset-lg-1'>
               <div className='service-sidebar'>
                 <div className='widget info-widget'>
                   <h3>
@@ -342,7 +341,7 @@ const Services = () => {
                         {loading ? (
                           <i className='ti-reload'></i>
                         ) : (
-                          "Agendar Reunión Ahora"
+                          "Agendar Reunión"
                         )}
                       </button>
                       <div className='clearfix error-handling-messages'>

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../../assets/images/about/about-3.jpg";
-import img2 from "../../../assets/images/about/about-5.jpg";
+import img1 from "../../../assets/images/cafe-398x453.png";
+import img2 from "../../../assets/images/clima-255x174.png";
 import img3 from "../../../assets/images/about/shape-2.png";
 import img4 from "../../../assets/images/about/shape-1.png";
-import img5 from "../../../assets/images/about/about-4.jpg";
+import img5 from "../../../assets/images/aym-187x196.png";
 import WOW from "wowjs";
 
 const AboutTwo = () => {
@@ -41,7 +41,7 @@ const AboutTwo = () => {
                   >
                     <div className='exprience-inner'>
                       <p>
-                        15<span>Years Of experience</span>
+                        <span>Soluciones de calidad garantizada</span>
                       </p>
                     </div>
                   </div>

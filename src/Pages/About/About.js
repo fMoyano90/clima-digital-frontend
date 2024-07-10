@@ -6,12 +6,12 @@ import FooterTwo from "../Footer/FooterTwo";
 import AboutOne from "../HomeOne/AboutOne/AboutOne";
 import TextAnimationTwo from "../HomeOne/TextAnimationTwo/TextAnimationTwo";
 // import ServicesTwo from "../HomeTwo/ServicesTwo/ServicesTwo";
-import Testimonial from "../HomeOne/Testimonial/Testimonial";
-import PortfoliosOne from "../HomeOne/PortfoliosOne/PortfoliosOne";
+// import Testimonial from "../HomeOne/Testimonial/Testimonial";
+// import PortfoliosOne from "../HomeOne/PortfoliosOne/PortfoliosOne";
 import AboutTwo from "../HomeTwo/AboutTwo/AboutTwo";
 
 const About = () => {
-  pageTitle("About Us");
+  pageTitle("Nosotros");
 
   return (
     <>
@@ -20,8 +20,7 @@ const About = () => {
       <AboutOne></AboutOne>
       <TextAnimationTwo></TextAnimationTwo>
       {/* <ServicesTwo></ServicesTwo> */}
-      <Testimonial></Testimonial>
-      <PortfoliosOne></PortfoliosOne>
+      {/* <PortfoliosOne></PortfoliosOne> */}
       <AboutTwo></AboutTwo>
 
       <FooterTwo></FooterTwo>

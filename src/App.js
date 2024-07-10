@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import HomeOne from "./Pages/HomeOne/HomeOne/HomeOne";
 import About from "./Pages/About/About";
-import Services from "./Pages/Services/Services";
 import ServiceOne from "./Pages/ServiceSingle/ServiceOne";
 import ServiceTwo from "./Pages/ServiceSingle/ServiceTwo";
 import ServiceThree from "./Pages/ServiceSingle/ServiceThree";

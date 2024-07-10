@@ -3,7 +3,6 @@ import { pageTitle } from "../PageTitle";
 import BreadCrumb from "../BreadCrumb";
 import HeaderOne from "../Header/HeaderOne";
 import FooterTwo from "../Footer/FooterTwo";
-import { Link } from "react-router-dom";
 import WOW from "wowjs";
 import axios from "axios";
 
@@ -115,121 +114,121 @@ const Services = () => {
                   </p>
                   <div className='details-items'>
                     <div className='row'>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Inventario</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Relaciones con Clientes (CRM)</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Recursos Humanos</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Finanzas y Contabilidad</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Producto y Manufactura</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Ventas</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Gestión Documental</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Gestión Documental</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Transporte y Logística</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Calidad</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Activos</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Salud y Seguridad en el Trabajo</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Análisis y Reportes</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Contenido</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Cadena de Suministros</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Plataformas de Aprendizaje</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Eventos</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Automatización de Marketing</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Atención al Cliente</h3>
                         </div>
                       </div>
-                      <div className='col-4'>
+                      <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div class='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Facturación y Pagos</h3>
@@ -240,7 +239,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 offset-1'>
+            <div className='col-lg-4 offset-lg-1'>
               <div className='service-sidebar'>
                 <div className='widget info-widget'>
                   <h3>
@@ -388,7 +387,7 @@ const Services = () => {
                           <option value='Un amigo'>Un amigo</option>
                         </select>
                       </div>
-                      <div className='col-md-12 col-12 form-field pt-4'>
+                      <div className='col-md-6 col-sm-12 col-12 form-field pt-4'>
                         <textarea
                           rows={5}
                           className='form-control'
@@ -409,7 +408,7 @@ const Services = () => {
                         {loading ? (
                           <i className='ti-reload'></i>
                         ) : (
-                          "Agendar Reunión Ahora"
+                          "Agendar Reunión"
                         )}
                       </button>
                       <div className='clearfix error-handling-messages'>
@@ -423,7 +422,7 @@ const Services = () => {
                 </div>
               </div>
               <div className='row pt-2'>
-                <div className='col-md-6'>
+                <div className='col-md-6 col-sm-12'>
                   <a
                     href='https://wa.me/56974690241'
                     target='_blank'
@@ -437,7 +436,7 @@ const Services = () => {
                     </button>
                   </a>
                 </div>
-                <div className='col-md-6'>
+                <div className='col-md-6 col-sm-12'>
                   <a href='tel:+56974690241'>
                     <button
                       className='w-100 btn-call'

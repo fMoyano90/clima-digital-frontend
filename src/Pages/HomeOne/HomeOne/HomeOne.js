@@ -7,7 +7,7 @@ import Service from "../Service/Service";
 import TextAnimationTwo from "../TextAnimationTwo/TextAnimationTwo";
 import AboutOne from "../AboutOne/AboutOne";
 import ContactHome from "../../Contact/ContactHome";
-import Testimonial from "../Testimonial/Testimonial";
+// import Testimonial from "../Testimonial/Testimonial";
 import SkillOne from "../SkillOne/SkillOne";
 // import Blog from "../Blog/Blog";
 import { pageTitle } from "../../PageTitle";
@@ -20,10 +20,10 @@ const HomeOne = () => {
       <BannerOne></BannerOne>
       <TextAnimationOne></TextAnimationOne>
       <Service></Service>
-      <TextAnimationTwo></TextAnimationTwo>
       <AboutOne></AboutOne>
       <ContactHome></ContactHome>
-      <Testimonial></Testimonial>
+      <TextAnimationTwo className="only-desktop"></TextAnimationTwo>
+      {/* <Testimonial></Testimonial> */}
       <SkillOne></SkillOne>
       {/* <Blog></Blog> */}
       <FooterOne></FooterOne>
