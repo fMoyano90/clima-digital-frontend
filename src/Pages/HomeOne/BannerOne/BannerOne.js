@@ -62,29 +62,29 @@ const BannerOne = () => {
             <div className='col-xl-10 col-lg-10 col-12'>
               <div className='ch-main-hero-text'>
                 <h2 className='site-split-text ch-split-in-left'>
-                  Brilla en el Firmamento Digital
+                  Innovación Digital <br/>a tu Alcance
                 </h2>
                 <h3
                   style={{
                     color: "white",
                     fontWeight: "bold",
                     marginBottom: "20px",
+                    fontSize: "32px"
                   }}
                 >
-                  Transformamos tu visión en realidad con soluciones digitales
-                  innovadoras
+                  Soluciones Digitales Personalizadas para tu Negocio
                 </h3>
-                <p className='wow fadeInUp' data-wow-duration='1400ms'>
+      n         {/* <p className='wow fadeInUp' data-wow-duration='1400ms'>
                   No dejes que las nubes oscurezcan tu camino. Contáctanos hoy y
                   descubre cómo podemos ayudarte a alcanzar tus objetivos
                   digitales con claridad y confianza.
-                </p>
+                </p> */}
                 <div
                   className='hero-btn wow fadeInUp'
                   data-wow-duration='1600ms'
                 >
-                  <Link to='/about' className='ch-btn-style-2'>
-                    Comencemos Ahora
+                  <Link to='/about' className='ch-btn-style-2 home'>
+                    Hablemos Ahora
                   </Link>
                 </div>
               </div>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import WOW from "wowjs";
 import axios from "axios";
 
-import img1 from "../../assets/images/service-single/single.jpg";
+import img1 from "../../assets/images/thermometer-01.svg";
 import "./ServiceSingle.css";
 
 const Services = () => {
@@ -97,150 +97,88 @@ const Services = () => {
       <div className='service-single-page ptb-120'>
         <div className='container'>
           <div className='row'>
-            <div className='col-lg-8 col-12'>
+            <div className='col-lg-7 col-12'>
               <div className='serice-details'>
-                <div className='details-img'>
+                {/*     <div className='details-img'>
                   <img src={img1} alt='' />
-                </div>
+                </div> */}
                 <div className='details-text'>
-                  <h2>Future of your made insurance business</h2>
+                  <h2>Gestión Eficiente y Ventas Seguras</h2>
                   <p>
-                    Aliquam eros posuer loborti viverra laoree ullamcorper
-                    posuere viverra ero justo, posuere lobo viverra laoreet
-                    augue mattis fermentum ullamcAliquam eros posuer loborti
-                    viverra laoree ullamcorper posuere viverra ero justo,
-                    posuere lobo viverra laoreet augue mattis fermentum
-                    ullamcorper viverraorper viverra
+                    En Clima Digital, nos especializamos en la creación de
+                    tiendas online robustas y seguras que facilitan la gestión
+                    de productos y aumentan tus ventas. Sabemos que cada negocio
+                    es único, por lo que ofrecemos soluciones personalizadas
+                    adaptadas a tus necesidades específicas. Nuestra experiencia
+                    en comercio electrónico nos permite proporcionar plataformas
+                    que no solo son visualmente atractivas, sino también
+                    altamente funcionales y optimizadas para el rendimiento.
                   </p>
                   <div className='details-items'>
                     <div className='row'>
-                      <div className='col-lg-3 col-md-6 col-12'>
+                      <div className='col-12 card-xl-services'>
                         <h3>
-                          <i className='ti-check'></i> Comprehensive
+                          <img src={img1} alt='' /> E-Commerce
                         </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
+                        <p>
+                          Diseñamos y desarrollamos tiendas online
+                          personalizadas y atractivas que reflejan la identidad
+                          de tu marca y proporcionan una experiencia de compra
+                          excepcional para tus clientes.
+                        </p>
+                        <ul>
+                          <li>Diseño Atractivo y Responsivo</li>
+                          <li>Interfaz Intuitiva</li>
+                          <li>Gestión de Productos y Stock</li>
+                          <li>Integración de Pagos Seguros</li>
+                        </ul>
                       </div>
-                      <div className='col-lg-3 col-md-6 col-12'>
+                      <div className='col-12 card-xl-services'>
                         <h3>
-                          <i className='ti-check'></i> Holistic Risk
+                          <img src={img1} alt='' /> Gestión de Reservas
                         </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
+                        <p>
+                          Facilita a tus clientes la posibilidad de agendar
+                          citas y consultas a través de sistemas de reservas en
+                          línea. Implementamos soluciones de gestión de reservas
+                          eficientes y fáciles de usar.
+                        </p>
+                        <ul>
+                          <li>Sistemas de Reservas Personalizados</li>
+                          <li>Disponibilidad en Tiempo Real</li>
+                          <li>Notificaciones y Recordatorios</li>
+                          <li>Integración con Calendarios</li>
+                        </ul>
                       </div>
-                      <div className='col-lg-3 col-md-6 col-12'>
+                      <div className='col-12 card-xl-services'>
                         <h3>
-                          <i className='ti-check'></i> Comprehensive
+                          <img src={img1} alt='' /> Sistemas de Suscripción
                         </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
-                      </div>
-                      <div className='col-lg-3 col-md-6 col-12'>
-                        <h3>
-                          <i className='ti-check'></i> Holistic Risk
-                        </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    Aliquam eros justo, posuere loborti viverra laorko matti
-                    ullamcor posuere viverra .Aliquam erosto, posuere lobortis
-                    non viverra laoreet augue mis fermentum ullamcorper viverra
-                    lao Aliquam eros justo, posuere loborti viverra laoreet
-                    matti ullamcorper posuere viverra .Aliquam eros justo,
-                    posuere lobortis non, viverra laoreet{" "}
-                  </p>
-                </div>
-                <div className='service-area'>
-                  <div className='service-wrap'>
-                    <div className='row'>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp'
-                          data-wow-duration='1000ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>Personal Chef</Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp active'
-                          data-wow-duration='1200ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>Web Development</Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp'
-                          data-wow-duration='1400ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>
-                                Digital Marketing
-                              </Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp'
-                          data-wow-duration='1600ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>
-                                E-commerce Solutions
-                              </Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
-                        </div>
+                        <p>
+                          Optimiza tus procesos empresariales con sistemas de
+                          suscripción que facilitan la gestión de clientes y
+                          servicios recurrentes. Proporcionamos soluciones
+                          integrales para administrar suscripciones de manera
+                          eficiente.
+                        </p>
+                        <ul>
+                          <li>Gestión de Suscriptores</li>
+                          <li>Facturación Automatizada</li>
+                          <li>Notificaciones y Recordatorios</li>
+                          <li>Escalabilidad</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-lg-4'>
+            <div className='col-lg-4 offset-1'>
               <div className='service-sidebar'>
                 <div className='widget info-widget'>
-                  <h3>Comienza hoy y automatiza tus procesos</h3>
+                  <h3>
+                    Optimiza tus Procesos Internos con Nuestras Soluciones
+                  </h3>
                   <form method='post' onSubmit={SubmitHandler}>
                     <div className='form-field'>
                       <div className='form-field'>
@@ -303,9 +241,7 @@ const Services = () => {
                           <option disabled='disabled' value=''>
                             Selecciona una opción
                           </option>
-                          <option value='Tiendas virtuales'>
-                            Tiendas virtuales
-                          </option>
+                          <option value='Tiendas Online'>Tiendas Online</option>
                           <option value='Plataformas de Agendamiento Online'>
                             Plataformas de Agendamiento Online
                           </option>

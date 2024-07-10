@@ -644,8 +644,18 @@
       position: relative;
       height: 100%;
       overflow: hidden;
-
+			margin-left: 30px;
+			color: white;
+			border: 1px solid white;
+			border-radius: 20px;
       .service-image {
+				p{					
+					font-size: 16px;
+					color: white;
+					text-align: left;
+				}
+				padding: 40px 40px;
+				text-align: justify;
         position: absolute;
         top: 0;
         right: 0;
@@ -656,17 +666,20 @@
         transition: all .8s;
         transform: scale(0);
         z-index: -1;
-
+				color: white;
+				
         &.active {
-          position: relative;
+					position: relative;
+					color: white;
           opacity: 1;
           z-index: 1;
           transition: opacity .9s cubic-bezier(.215, .61, .355, 1);
           transform: scale(1);
         }
-
+				text-align: center;
         img {
-          width: 100%;
+          width: 100px;
+					margin-bottom: 30px;
         }
       }
     }

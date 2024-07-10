@@ -60,7 +60,7 @@ export default function Header({ variant }) {
                                 Sitios Web Profesionales
                               </NavLink>
                               <NavLink to='/servicio/tiendas-online'>
-                                Tiendas Virtuales
+                                Tiendas Online
                               </NavLink>
                               <NavLink to='/servicio/sistemas-gestion'>
                                 Sistemas de Gestión

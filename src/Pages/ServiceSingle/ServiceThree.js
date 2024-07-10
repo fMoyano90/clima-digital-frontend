@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import WOW from "wowjs";
 import axios from "axios";
 
-import img1 from "../../assets/images/service-single/single.jpg";
+import img1 from "../../assets/images/thermometer-01.svg";
 import "./ServiceSingle.css";
 
 const Services = () => {
@@ -97,139 +97,142 @@ const Services = () => {
       <div className='service-single-page ptb-120'>
         <div className='container'>
           <div className='row'>
-            <div className='col-lg-8 col-12'>
+            <div className='col-lg-7 col-12'>
               <div className='serice-details'>
-                <div className='details-img'>
-                  <img src={img1} alt='' />
-                </div>
+                {/*     <div className='details-img'>
+                 
+                    adaptarse a tus objetivos empresariales.
+                </div> */}
                 <div className='details-text'>
-                  <h2>Future of your made insurance business</h2>
+                  <h2>Optimiza tus Procesos con Nuestras Soluciones</h2>
                   <p>
-                    Aliquam eros posuer loborti viverra laoree ullamcorper
-                    posuere viverra ero justo, posuere lobo viverra laoreet
-                    augue mattis fermentum ullamcAliquam eros posuer loborti
-                    viverra laoree ullamcorper posuere viverra ero justo,
-                    posuere lobo viverra laoreet augue mattis fermentum
-                    ullamcorper viverraorper viverra
+                    En Clima Digital, desarrollamos sistemas de gestión
+                    personalizados que facilitan la administración de tu
+                    negocio, mejoran la eficiencia operativa y potencian el
+                    crecimiento. Entendemos que cada empresa tiene necesidades
+                    únicas, por lo que nuestras soluciones están diseñadas a
+                    medida para satisfacer tus requisitos específicos y
                   </p>
                   <div className='details-items'>
                     <div className='row'>
-                      <div className='col-lg-3 col-md-6 col-12'>
-                        <h3>
-                          <i className='ti-check'></i> Comprehensive
-                        </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
-                      </div>
-                      <div className='col-lg-3 col-md-6 col-12'>
-                        <h3>
-                          <i className='ti-check'></i> Holistic Risk
-                        </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
-                      </div>
-                      <div className='col-lg-3 col-md-6 col-12'>
-                        <h3>
-                          <i className='ti-check'></i> Comprehensive
-                        </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
-                      </div>
-                      <div className='col-lg-3 col-md-6 col-12'>
-                        <h3>
-                          <i className='ti-check'></i> Holistic Risk
-                        </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    Aliquam eros justo, posuere loborti viverra laorko matti
-                    ullamcor posuere viverra .Aliquam erosto, posuere lobortis
-                    non viverra laoreet augue mis fermentum ullamcorper viverra
-                    lao Aliquam eros justo, posuere loborti viverra laoreet
-                    matti ullamcorper posuere viverra .Aliquam eros justo,
-                    posuere lobortis non, viverra laoreet{" "}
-                  </p>
-                </div>
-                <div className='service-area'>
-                  <div className='service-wrap'>
-                    <div className='row'>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp'
-                          data-wow-duration='1000ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>Personal Chef</Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Inventario</h3>
                         </div>
                       </div>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp active'
-                          data-wow-duration='1200ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>Web Development</Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Relaciones con Clientes (CRM)</h3>
                         </div>
                       </div>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp'
-                          data-wow-duration='1400ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>
-                                Digital Marketing
-                              </Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Recursos Humanos</h3>
                         </div>
                       </div>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp'
-                          data-wow-duration='1600ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>
-                                E-commerce Solutions
-                              </Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Finanzas y Contabilidad</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Producto y Manufactura</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Ventas</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Gestión Documental</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Gestión Documental</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Transporte y Logística</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Calidad</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Activos</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Salud y Seguridad en el Trabajo</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Análisis y Reportes</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Contenido</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Cadena de Suministros</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Plataformas de Aprendizaje</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Eventos</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Automatización de Marketing</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Atención al Cliente</h3>
+                        </div>
+                      </div>
+                      <div className='col-4'>
+                        <div class='card-m-services'>
+                          <img src={img1} alt='' />
+                          <h3>Facturación y Pagos</h3>
                         </div>
                       </div>
                     </div>
@@ -237,10 +240,12 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4'>
+            <div className='col-lg-4 offset-1'>
               <div className='service-sidebar'>
                 <div className='widget info-widget'>
-                  <h3>Comienza hoy y automatiza tus procesos</h3>
+                  <h3>
+                    Optimiza tus Procesos Internos con Nuestras Soluciones
+                  </h3>
                   <form method='post' onSubmit={SubmitHandler}>
                     <div className='form-field'>
                       <div className='form-field'>
@@ -303,9 +308,7 @@ const Services = () => {
                           <option disabled='disabled' value=''>
                             Selecciona una opción
                           </option>
-                          <option value='Tiendas virtuales'>
-                            Tiendas virtuales
-                          </option>
+                          <option value='Tiendas Online'>Tiendas Online</option>
                           <option value='Plataformas de Agendamiento Online'>
                             Plataformas de Agendamiento Online
                           </option>

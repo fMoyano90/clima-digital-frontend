@@ -90,7 +90,7 @@ const Contact = () => {
             <div className='col col-lg-5 col-12'>
               <div className='contact-title'>
                 <div className='ch-top-title-s3'>
-                  <span className="testimonial">CONTÁCTENOS</span>
+                  <span className='testimonial'>CONTÁCTENOS</span>
                   <h2 className='site-split-text ch-split-in-right testimonial'>
                     Impulsa tu negocio con soluciones tecnológicas innovadoras
                   </h2>
@@ -170,9 +170,7 @@ const Contact = () => {
                         <option disabled='disabled' value=''>
                           Selecciona una opción
                         </option>
-                        <option value='Tiendas virtuales'>
-                          Tiendas virtuales
-                        </option>
+                        <option value='Tiendas Online'>Tiendas Online</option>
                         <option value='Plataformas de Agendamiento Online'>
                           Plataformas de Agendamiento Online
                         </option>

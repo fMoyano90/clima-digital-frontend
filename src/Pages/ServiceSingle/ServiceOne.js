@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import WOW from "wowjs";
 import axios from "axios";
 
-import img1 from "../../assets/images/service-single/single.jpg";
+import img1 from "../../assets/images/thermometer-01.svg";
 import "./ServiceSingle.css";
 
 const Services = () => {
@@ -97,150 +97,119 @@ const Services = () => {
       <div className='service-single-page ptb-120'>
         <div className='container'>
           <div className='row'>
-            <div className='col-lg-8 col-12'>
+            <div className='col-lg-7 col-12'>
               <div className='serice-details'>
-                <div className='details-img'>
+                {/*     <div className='details-img'>
                   <img src={img1} alt='' />
-                </div>
+                </div> */}
                 <div className='details-text'>
-                  <h2>Future of your made insurance business</h2>
+                  <h2>Diseño y desarrollo de Sitios Web</h2>
                   <p>
-                    Aliquam eros posuer loborti viverra laoree ullamcorper
-                    posuere viverra ero justo, posuere lobo viverra laoreet
-                    augue mattis fermentum ullamcAliquam eros posuer loborti
-                    viverra laoree ullamcorper posuere viverra ero justo,
-                    posuere lobo viverra laoreet augue mattis fermentum
-                    ullamcorper viverraorper viverra
+                    En Clima Digital, ofrecemos soluciones integrales de diseño
+                    y desarrollo de sitios web. Nos enfocamos en crear sitios
+                    web personalizados, optimizados y responsivos que reflejen
+                    la identidad de tu marca y proporcionen una experiencia de
+                    usuario excepcional.
                   </p>
                   <div className='details-items'>
                     <div className='row'>
-                      <div className='col-lg-3 col-md-6 col-12'>
+                      <div className='col-12 card-xl-services'>
                         <h3>
-                          <i className='ti-check'></i> Comprehensive
+                          <img src={img1} alt='' /> Presencia Online
                         </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
+                        <p>
+                          Asegura que tu negocio esté visible y accesible.
+                          Diseñamos y desarrollamos sitios web completos que
+                          representan tu marca de manera efectiva y profesional.
+                        </p>
+                        <ul>
+                          <li>Visibilidad Global</li>
+                          <li>Diseño Responsivo</li>
+                          <li>Carga Rápida</li>
+                          <li>Seguridad</li>
+                        </ul>
                       </div>
-                      <div className='col-lg-3 col-md-6 col-12'>
+                      <div className='col-12 card-xl-services'>
                         <h3>
-                          <i className='ti-check'></i> Holistic Risk
+                          <img src={img1} alt='' /> Blogs
                         </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
+                        <p>
+                          Crea y administra un blog para compartir contenido
+                          valioso con tu audiencia. Diseñamos plataformas de
+                          blogs que son fáciles de usar y atractivas para tus
+                          lectores.
+                        </p>
+                        <ul>
+                          <li>Fácil Publicación</li>
+                          <li>Aumento del Tráfico</li>
+                          <li>Compromiso del Usuario</li>
+                          <li>Compartibilidad</li>
+                        </ul>
                       </div>
-                      <div className='col-lg-3 col-md-6 col-12'>
+                      <div className='col-12 card-xl-services'>
                         <h3>
-                          <i className='ti-check'></i> Comprehensive
+                          <img src={img1} alt='' /> Agendamientos por
+                          formularios
                         </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
+                        <p>
+                          Facilita a tus clientes la posibilidad de agendar
+                          citas y consultas a través de formularios en línea.
+                          Implementamos sistemas de agendamiento eficientes y
+                          fáciles de usar.
+                        </p>
+                        <ul>
+                          <li>Gestión Eficiente</li>
+                          <li>Disponibilidad 24/7</li>
+                          <li>Notificaciones Automáticas</li>
+                          <li>Integración con Calendarios</li>
+                          <li>Análisis y Reportes</li>
+                        </ul>
                       </div>
-                      <div className='col-lg-3 col-md-6 col-12'>
+                      <div className='col-12 card-xl-services'>
                         <h3>
-                          <i className='ti-check'></i> Holistic Risk
+                          <img src={img1} alt='' /> Pagos por transferencia
                         </h3>
-                        <p>Will be distrol acte bioiiy desig is fact that</p>
+                        <p>
+                          Integra sistemas de pago por transferencias bancarias
+                          directamente en tu sitio web. Proporcionamos
+                          soluciones seguras y confiables para gestionar las
+                          transacciones de tus clientes.
+                        </p>
+                        <ul>
+                          <li>Seguridad</li>
+                          <li>Conveniencia</li>
+                          <li>Registro de Pagos</li>
+                          <li>Automatización</li>
+                        </ul>
                       </div>
-                    </div>
-                  </div>
-                  <p>
-                    Aliquam eros justo, posuere loborti viverra laorko matti
-                    ullamcor posuere viverra .Aliquam erosto, posuere lobortis
-                    non viverra laoreet augue mis fermentum ullamcorper viverra
-                    lao Aliquam eros justo, posuere loborti viverra laoreet
-                    matti ullamcorper posuere viverra .Aliquam eros justo,
-                    posuere lobortis non, viverra laoreet{" "}
-                  </p>
-                </div>
-                <div className='service-area'>
-                  <div className='service-wrap'>
-                    <div className='row'>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp'
-                          data-wow-duration='1000ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>Personal Chef</Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp active'
-                          data-wow-duration='1200ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>Web Development</Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp'
-                          data-wow-duration='1400ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>
-                                Digital Marketing
-                              </Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col col-lg-6 col-md-6 col-12'>
-                        <div
-                          className='service-item wow fadeInUp'
-                          data-wow-duration='1600ms'
-                        >
-                          <div className='service-text'>
-                            <h3>
-                              <Link to='/service-single'>
-                                E-commerce Solutions
-                              </Link>
-                            </h3>
-                            <p>
-                              A Portfolio is a collection of works that is to
-                              showcases for an individual's peoples
-                            </p>
-                            <Link to='/service-single' className='read-more'>
-                              Read More
-                            </Link>
-                          </div>
-                        </div>
+                      <div className='col-12 card-xl-services'>
+                        <h3>
+                          <img src={img1} alt='' /> Landing Pages
+                        </h3>
+                        <p>
+                          Crea landing pages efectivas para campañas
+                          específicas. Diseñamos páginas de aterrizaje
+                          optimizadas para convertir visitantes en clientes.
+                        </p>
+                        <ul>
+                          <li>Altas Conversiones</li>
+                          <li>Personalización</li>
+                          <li>Análisis y Reportes</li>
+                          <li>Carga Rápida</li>
+                          <li>Integración con CRM y Email Marketing</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-lg-4'>
+            <div className='col-lg-4 offset-1'>
               <div className='service-sidebar'>
                 <div className='widget info-widget'>
-                  <h3>Comienza hoy y automatiza tus procesos</h3>
+                  <h3>
+                    Optimiza tus Procesos Internos con Nuestras Soluciones
+                  </h3>
                   <form method='post' onSubmit={SubmitHandler}>
                     <div className='form-field'>
                       <div className='form-field'>
@@ -303,9 +272,7 @@ const Services = () => {
                           <option disabled='disabled' value=''>
                             Selecciona una opción
                           </option>
-                          <option value='Tiendas virtuales'>
-                            Tiendas virtuales
-                          </option>
+                          <option value='Tiendas Online'>Tiendas Online</option>
                           <option value='Plataformas de Agendamiento Online'>
                             Plataformas de Agendamiento Online
                           </option>

@@ -26,7 +26,7 @@ const Service = () => {
     },
     {
       id: 2,
-      title: "Tiendas Virtuales",
+      title: "Tiendas Online",
       description:
         "Creamos plataformas de ecommerce que no solo son visualmente atractivas, sino también altamente funcionales y seguras, facilitando la gestión y el crecimiento de tu tienda online.",
       icon: "icon-sicon2",

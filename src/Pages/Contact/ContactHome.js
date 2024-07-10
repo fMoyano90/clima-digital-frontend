@@ -197,9 +197,7 @@ const ContactHome = () => {
                         <option disabled='disabled' value=''>
                           Selecciona una opción
                         </option>
-                        <option value='Tiendas virtuales'>
-                          Tiendas virtuales
-                        </option>
+                        <option value='Tiendas Online'>Tiendas Online</option>
                         <option value='Plataformas de Agendamiento Online'>
                           Plataformas de Agendamiento Online
                         </option>

@@ -32,13 +32,17 @@ const FooterOne = () => {
                   </div>
                   <ul>
                     <li>
-                      <Link to='/servicio/sitios-web-profesionales'>Sitios Web Profesionales</Link>
+                      <Link to='/servicio/sitios-web-profesionales'>
+                        Sitios Web Profesionales
+                      </Link>
                     </li>
                     <li>
-                      <Link to='/servicio/tiendas-online'>Tientas Virtuales</Link>
+                      <Link to='/servicio/tiendas-online'>Tiendas Online</Link>
                     </li>
                     <li>
-                      <Link to='/servicio/sistemas-gestion'>Sistemas de Gestión</Link>
+                      <Link to='/servicio/sistemas-gestion'>
+                        Sistemas de Gestión
+                      </Link>
                     </li>
                     <li>
                       <Link to='/servicio/apps-moviles'>Apps Móviles</Link>

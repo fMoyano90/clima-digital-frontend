@@ -13,7 +13,7 @@ const BreadCrumb = () => {
             <div className='breadcumb-wrap'>
               <h2>
                 {pathnames.length > 0
-                  ? pathnames[pathnames.length - 1]
+                  ? pathnames[pathnames.length - 1].replaceAll("-", " ")
                   : "Home"}
               </h2>
               <ol>
@@ -25,7 +25,7 @@ const BreadCrumb = () => {
                 {pathnames.map((name, index) => (
                   <li key={index}>
                     <Link to={`/${pathnames.slice(0, index + 1).join("/")}`}>
-                      {name}
+                      {name.replaceAll("-", " ")}
                     </Link>
                   </li>
                 ))}

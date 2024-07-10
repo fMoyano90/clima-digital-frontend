@@ -57,16 +57,17 @@
     }
 
     .ch-main-hero-text {
-        position: relative;
-        padding-top: 110px;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
         @media (max-width: 991px) {
             text-align: center;
             padding-top: 0;
         }
 
         h2 {
-            font-size: 110px;
+            font-size: 90px;
             font-style: normal;
             font-weight: 700;
             line-height: 82%;
@@ -170,7 +171,7 @@
     }
 
     .hero-btn {
-        margin-top: 40px;
+        margin-top: -20px;
     }
 
     .poligon-wrap {

@@ -37,9 +37,7 @@ const FooterTwo = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to='/servicio/tiendas-online'>
-                        Tientas Virtuales
-                      </Link>
+                      <Link to='/servicio/tiendas-online'>Tiendas Online</Link>
                     </li>
                     <li>
                       <Link to='/servicio/sistemas-gestion'>
