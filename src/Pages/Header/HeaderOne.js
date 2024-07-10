@@ -81,9 +81,9 @@ export default function Header({ variant }) {
                   </div>
                 </div>
                 <div className='col-xl-3 col-lg-3 col-md-3 col-3 text-left'>
-                  <div className='cp-header-area-right'>
+                  <div className='cp-header-area-right only-desktop'>
                     <Link onClick={handleClick} className='call-btn'>
-                      <div class='whatsapp-icon only-desktop'>
+                      <div class='whatsapp-icon'>
                         <svg
                           version='1.1'
                           xmlns='http://www.w3.org/2000/svg'
