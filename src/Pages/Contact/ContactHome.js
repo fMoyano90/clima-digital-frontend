@@ -65,7 +65,7 @@ const ContactHome = () => {
     let config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://localhost:3001/v1/contact",
+      url: "https://clima-digital-bff-0c8760dd7b54.herokuapp.com//v1/contact",
       headers: {
         "Content-Type": "application/json",
       },

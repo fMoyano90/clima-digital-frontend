@@ -51,7 +51,7 @@ const Services = () => {
     let config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://localhost:3001/v1/contact",
+      url: "https://clima-digital-bff-0c8760dd7b54.herokuapp.com//v1/contact",
       headers: {
         "Content-Type": "application/json",
       },
@@ -163,7 +163,9 @@ const Services = () => {
                           fáciles de usar.
                         </p>
                         <ul>
-                          <li>Publicación en Google Play Store y Apple App Store</li>
+                          <li>
+                            Publicación en Google Play Store y Apple App Store
+                          </li>
                           <li>Optimización de Fichas de App</li>
                           <li>Cumplimiento de Normativas</li>
                           <li>Actualizaciones y Mantenimiento</li>

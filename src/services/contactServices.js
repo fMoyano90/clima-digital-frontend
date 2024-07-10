@@ -1,7 +1,7 @@
 // services/contactService.js
 import axios from "axios";
 
-const API_URL = "http://localhost:3001/v1";
+const API_URL = "https://clima-digital-bff-0c8760dd7b54.herokuapp.com//v1";
 
 const fetchContacts = (page, limit) => {
   return axios.get(`${API_URL}/contacts`, {
