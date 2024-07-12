@@ -20,7 +20,7 @@ const Service = () => {
       description:
         "Desarrollamos sitios web a medida, optimizados y responsivos que representan la identidad de tu marca y ofrecen una experiencia de usuario excepcional.",
       icon: "icon-sicon1",
-      href: "/service-single",
+      href: "/servicio/sitios-web-profesionales",
       time: "1000ms",
       img: img1,
     },
@@ -30,7 +30,7 @@ const Service = () => {
       description:
         "Creamos plataformas de ecommerce que no solo son visualmente atractivas, sino también altamente funcionales y seguras, facilitando la gestión y el crecimiento de tu tienda online.",
       icon: "icon-sicon2",
-      href: "/service-single",
+      href: "/servicio/tiendas-online",
       time: "1200ms",
       img: img2,
     },
@@ -40,7 +40,7 @@ const Service = () => {
       description:
         "Optimiza tus procesos empresariales con nuestros sistemas de gestión personalizados. Simplifica la administración de recursos y mejora la eficiencia operativa de tu negocio.",
       icon: "icon-sicon3",
-      href: "/service-single",
+      href: "/servicio/sistemas-gestion",
       time: "1400ms",
       img: img3,
     },
@@ -50,7 +50,7 @@ const Service = () => {
       description:
         "Desarrollamos aplicaciones móviles innovadoras que ofrecen una experiencia de usuario excepcional. Nuestras apps están diseñadas para impulsar la interacción y satisfacer las necesidades de tus clientes.",
       icon: "icon-sicon4",
-      href: "/service-single",
+      href: "/servicio/apps-moviles",
       time: "1000ms",
       img: img4,
     },
@@ -65,7 +65,7 @@ const Service = () => {
           </h2>
           <div className='row'>
             {servicesData.map((item, id) => (
-              <div className='col col-lg-3 col-md-6 col-12' key={id}>
+              <div className='col-xl-3 col-lg-6 col-12' key={id}>
                 <div
                   className='service-item wow fadeInUp'
                   data-wow-duration={item.time}

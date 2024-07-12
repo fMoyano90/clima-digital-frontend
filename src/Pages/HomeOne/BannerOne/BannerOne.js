@@ -45,9 +45,9 @@ const BannerOne = () => {
   return (
     <section className='ch-main-hero'>
       <div className='video-background'>
-        <video autoPlay muted loop>
+        <video autoPlay muted loop playsinline>
           <source src={backgroundVideo} type='video/mp4' />
-          Your browser does not support the video tag.
+          Tu navegador no soporta el elemento de video.
         </video>
       </div>
       <div className='container'>
@@ -58,14 +58,7 @@ const BannerOne = () => {
                 <h2 className='site-split-text ch-split-in-left'>
                   Innovación Digital <br />a tu Alcance
                 </h2>
-                <h3
-                  style={{
-                    color: "white",
-                    fontWeight: "bold",
-                    marginBottom: "20px",
-                    fontSize: "32px",
-                  }}
-                >
+                <h3>
                   Soluciones Digitales Personalizadas para tu Negocio
                 </h3>
                 {/* <p className='wow fadeInUp' data-wow-duration='1400ms'>
@@ -77,7 +70,7 @@ const BannerOne = () => {
                   className='hero-btn wow fadeInUp'
                   data-wow-duration='1600ms'
                 >
-                  <Link to='/about' className='ch-btn-style-2 home'>
+                  <Link to='/contacto' className='ch-btn-style-2 home'>
                     Hablemos Ahora
                   </Link>
                 </div>

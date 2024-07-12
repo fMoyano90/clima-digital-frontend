@@ -73,8 +73,8 @@ const AboutTwo = () => {
                     con nuestros clientes son testimonio de nuestra dedicación y
                     profesionalismo.
                   </p>
-                  <Link to='/about' className='ch-btn-style-3 ch-btn-animated'>
-                    Contáctanos
+                  <Link to='/contacto' className='ch-btn-style-3 ch-btn-animated'>
+                    Hablemos
                   </Link>
                 </div>
               </div>

@@ -75,21 +75,29 @@
             margin-top: 20px;
             margin-bottom: 30px;
 
-            @media (max-width: 1500px) {
-                font-size: 100px;
-                line-height: 100px;
-            }
-
-            @media (max-width: 1199px) {
-                font-size: 70px;
+            @media (min-width: 575px) and (max-width: 1199px) {
+                font-size: 54px;
                 line-height: 70px;
             }
 
             @media (max-width: 575px) {
-                font-size: 44px;
+                font-size: 38px;
                 line-height: 44px;
                 margin-top: 10px;
                 margin-bottom: 20px;
+            }
+        }
+        h3{
+            color: white;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 32px;
+            @media (max-width: 575px){
+                font-size: 24px;
+            }
+            
+            @media (min-width: 575px) and (max-width: 1199px) {
+                font-size: 26px;
             }
         }
 

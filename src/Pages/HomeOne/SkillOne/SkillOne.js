@@ -38,7 +38,7 @@ const SkillOne = () => {
         </div>
         <div className='skill-wrap'>
           <div className='row align-items-center'>
-            <div className='col-lg-4 col-md-6 col-12'>
+            <div className='col-xl-4 col-lg-6 col-12'>
               <div
                 className='skill-card wow fadeInUp'
                 data-wow-duration='1000ms'
@@ -56,7 +56,7 @@ const SkillOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-12'>
+            <div className='col-xl-4 col-lg-6 col-12'>
               <div
                 className='skill-card wow fadeInUp'
                 data-wow-duration='1200ms'
@@ -74,7 +74,7 @@ const SkillOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-12'>
+            <div className='col-xl-4 col-lg-6 col-12'>
               <div
                 className='skill-card wow fadeInUp'
                 data-wow-duration='1400ms'
@@ -93,7 +93,7 @@ const SkillOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-12'>
+            <div className='col-xl-4 col-lg-6 col-12'>
               <div
                 className='skill-card wow fadeInUp'
                 data-wow-duration='1000ms'
@@ -111,7 +111,7 @@ const SkillOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-12'>
+            <div className='col-xl-4 col-lg-6 col-12'>
               <div
                 className='skill-card wow fadeInUp'
                 data-wow-duration='1200ms'
@@ -129,7 +129,7 @@ const SkillOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-12'>
+            <div className='col-xl-4 col-lg-6 col-12'>
               <div
                 className='skill-card wow fadeInUp'
                 data-wow-duration='1400ms'

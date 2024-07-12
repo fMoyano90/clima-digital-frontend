@@ -405,7 +405,7 @@ const Services = () => {
                       className='w-100 btn-call'
                       style={{ cursor: "pointer" }}
                     >
-                      LLámanos
+                      Hablemos
                     </button>
                   </a>
                 </div>

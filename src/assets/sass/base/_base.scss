@@ -69,6 +69,10 @@ img {
 }
 
 .container {
+    @media (max-width: 575px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     @media(min-width:1400px) {
         max-width: 1290px;
     }

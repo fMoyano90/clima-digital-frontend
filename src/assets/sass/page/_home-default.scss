@@ -49,11 +49,10 @@
 				display: inline-block;
 				margin: 0 20px;
 				color: $white;
-
-				@media(max-width:991px) {
-					font-size: 30px;
+				@media(min-width: 575px) and (max-width:1199px){
+					font-size: 28px;
 					margin: 0 20px;
-					letter-spacing: 20px;
+					letter-spacing: 5px;
 				}
 
 				&:nth-child(even) {
@@ -83,6 +82,7 @@
 	}
 
 	@media(max-width:767px) {
+		padding-top: 60px;
 		padding-bottom: 50px;
 	}
 
@@ -125,9 +125,11 @@
 		box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 		cursor: pointer;
 
-		@media(max-width:1199px) {
+
+		@media (min-width: 575px) and (max-width: 1199px) {
 			padding: 40px 30px;
-		}
+			height: 390px;
+    	}
 
 		&:hover,
 		&.active {
@@ -1175,6 +1177,9 @@
 
 			p {
 				margin-bottom: 0;
+			}
+			@media (max-width: 575px) {
+				padding-top: 25px;
 			}
 		}
 	}

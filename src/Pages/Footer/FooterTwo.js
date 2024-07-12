@@ -25,7 +25,7 @@ const FooterTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col col-xl-3 col-lg-2 col-md-6 col-sm-12 col-12'>
+              <div className='col col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12'>
                 <div className='widget link-widget'>
                   <div className='widget-title'>
                     <h3>Servicios destacados</h3>
@@ -50,7 +50,7 @@ const FooterTwo = () => {
                   </ul>
                 </div>
               </div>
-              <div className='col col-lg-3 col-md-6 col-sm-12 col-12'>
+              <div className='col col-lg-3 col-lg-3 col-md-6 col-sm-12 col-12'>
                 <div className='widget contact-widget'>
                   <div className='widget-title'>
                     <h3>Contacto</h3>

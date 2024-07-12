@@ -135,7 +135,7 @@ export default function Header({ variant }) {
                               id='navbarSupportedContent'
                             >
                               <ul className='navigation clearfix home-menu'>
-                                <li className='has-submenu'>
+                                <li>
                                   <NavLink to='/'>Inicio</NavLink>
                                 </li>
                                 <li>

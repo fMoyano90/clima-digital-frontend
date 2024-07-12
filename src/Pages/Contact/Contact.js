@@ -283,7 +283,7 @@ const Contact = () => {
           </div>
           <div className='office-info ptb-120'>
             <div className='row'>
-              <div className='col col-xl-4 col-lg-6 col-md-6 col-12'>
+              <div className='col col-xl-4 col-lg-4 col-md-6 col-12'>
                 <div className='office-info-item' style={{ cursor: "pointer" }}>
                   <a
                     href='https://wa.me/56974690241'
@@ -302,7 +302,7 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-              <div className='col col-xl-4 col-lg-6 col-md-6 col-12'>
+              <div className='col col-xl-4 col-lg-4 col-md-6 col-12'>
                 <div className='office-info-item' style={{ cursor: "pointer" }}>
                   <a href='mailto:contacto@climadigital.cl'>
                     <div className='office-info-icon'>
@@ -317,7 +317,7 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-              <div className='col col-xl-4 col-lg-6 col-md-6 col-12'>
+              <div className='col col-xl-4 col-lg-4 col-md-6 col-12'>
                 <div className='office-info-item' style={{ cursor: "pointer" }}>
                   <a href='tel:+56974690241'>
                     <div className='office-info-icon'>
@@ -326,7 +326,7 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className='office-info-text'>
-                      <h2>LLámanos</h2>
+                      <h2>Hablemos</h2>
                       <p>+569 7469 0241</p>
                     </div>
                   </a>
