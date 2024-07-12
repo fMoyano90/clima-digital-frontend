@@ -45,7 +45,7 @@ const BannerOne = () => {
   return (
     <section className='ch-main-hero'>
       <div className='video-background'>
-        <video autoPlay muted loop playsinline>
+        <video autoPlay muted loop >
           <source src={backgroundVideo} type='video/mp4' />
           Tu navegador no soporta el elemento de video.
         </video>

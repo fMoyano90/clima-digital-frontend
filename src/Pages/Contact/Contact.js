@@ -41,7 +41,7 @@ const Contact = () => {
     let config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "https://clima-digital-bff-0c8760dd7b54.herokuapp.com/v1/contact",
+      url: "http://clima-digital-bff-0c8760dd7b54.herokuapp.com/v1/contact",
       headers: {
         "Content-Type": "application/json",
       },
@@ -159,103 +159,12 @@ const Contact = () => {
                         value={formData.email}
                       />
                     </div>
-                    <div className='col-md-6 col-12 form-field'>
-                      <label>Servicio de Interés</label>
-                      <select
-                        name='interestService'
-                        className='form-control'
-                        onChange={handleChange}
-                        value={formData.interestService}
-                      >
-                        <option disabled='disabled' value=''>
-                          Selecciona una opción
-                        </option>
-                        <option value='Tiendas Online'>Tiendas Online</option>
-                        <option value='Plataformas de Agendamiento Online'>
-                          Plataformas de Agendamiento Online
-                        </option>
-                        <option value='Sitios de Presencia en Línea'>
-                          Sitios de Presencia en Línea
-                        </option>
-                        <option value='Sistemas de Gestión Empresarial'>
-                          Sistemas de Gestión Empresarial
-                        </option>
-                        <option value='Aplicaciones Móviles'>
-                          Aplicaciones Móviles
-                        </option>
-                        <option value='Chatbots y Asistentes Virtuales'>
-                          Chatbots y Asistentes Virtuales
-                        </option>
-                        <option value='Integraciones Personalizadas y APIs'>
-                          Integraciones Personalizadas y APIs
-                        </option>
-                        <option value='Marketing Digital'>
-                          Marketing Digital
-                        </option>
-                        <option value='Social Media'>Social Media</option>
-                      </select>
-                    </div>
-                    <div className='col-md-6 col-12 form-field'>
-                      <label>Medio de Contacto Preferido</label>
-                      <select
-                        name='contactPreference'
-                        className='form-control'
-                        onChange={handleChange}
-                        value={formData.contactPreference}
-                      >
-                        <option disabled='disabled' value=''>
-                          Selecciona una opción
-                        </option>
-                        <option value='Llamada telefónica'>
-                          Llamada telefónica
-                        </option>
-                        <option value='WhatsApp'>WhatsApp</option>
-                        <option value='Email'>Email</option>
-                      </select>
-                    </div>
-                    <div className='col-md-6 col-12 form-field'>
-                      <label>Horario Preferido</label>
-                      <select
-                        name='preferredContactTime'
-                        className='form-control'
-                        onChange={handleChange}
-                        value={formData.preferredContactTime}
-                      >
-                        <option disabled='disabled' value=''>
-                          Selecciona una opción
-                        </option>
-                        <option value='8:00 - 12:00'>8:00 - 12:00</option>
-                        <option value='12:00 - 16:00'>12:00 - 16:00</option>
-                        <option value='16:00 - 20:00'>16:00 - 20:00</option>
-                      </select>
-                    </div>
-                    <div className='col-md-6 col-12 form-field'>
-                      <label>¿Como supiste de nosotros?</label>
-                      <select
-                        name='referralSource'
-                        className='form-control'
-                        onChange={handleChange}
-                        value={formData.referralSource}
-                      >
-                        <option disabled='disabled' value=''>
-                          Selecciona una opción
-                        </option>
-                        <option value='Google'>Google</option>
-                        <option value='Instagram'>Instagram</option>
-                        <option value='LinkedIn'>LinkedIn</option>
-                        <option value='Evento'>Evento</option>
-                        <option value='Ejecutivo de ventas'>
-                          Ejecutivo de ventas
-                        </option>
-                        <option value='Un amigo'>Un amigo</option>
-                      </select>
-                    </div>
                     <div className='col-md-12 col-12 form-field'>
                       <textarea
                         className='form-control'
                         name='message'
                         id='note'
-                        placeholder='Cuéntanos un poco sobre tu idea o requerimiento'
+                        placeholder='Cuéntanos sobre tu meta o desafío'
                         onChange={handleChange}
                         value={formData.message}
                       ></textarea>

@@ -50,7 +50,7 @@ const Services = () => {
     let config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "https://clima-digital-bff-0c8760dd7b54.herokuapp.com/v1/contact",
+      url: "http://clima-digital-bff-0c8760dd7b54.herokuapp.com/v1/contact",
       headers: {
         "Content-Type": "application/json",
       },
@@ -115,121 +115,121 @@ const Services = () => {
                   <div className='details-items'>
                     <div className='row'>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Inventario</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Relaciones con Clientes (CRM)</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Recursos Humanos</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Finanzas y Contabilidad</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Producto y Manufactura</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Ventas</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Gestión Documental</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Gestión Documental</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Transporte y Logística</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Calidad</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Activos</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Salud y Seguridad en el Trabajo</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Análisis y Reportes</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Contenido</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Cadena de Suministros</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Plataformas de Aprendizaje</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Eventos</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Automatización de Marketing</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Atención al Cliente</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
-                        <div class='card-m-services'>
+                        <div className='card-m-services'>
                           <img src={img1} alt='' />
                           <h3>Facturación y Pagos</h3>
                         </div>
@@ -296,104 +296,13 @@ const Services = () => {
                           value={formData.email}
                         />
                       </div>
-                      <div className='form-field'>
-                        <label>Servicio de Interés</label>
-                        <select
-                          name='interestService'
-                          className='form-control'
-                          onChange={handleChange}
-                          value={formData.interestService}
-                        >
-                          <option disabled='disabled' value=''>
-                            Selecciona una opción
-                          </option>
-                          <option value='Tiendas Online'>Tiendas Online</option>
-                          <option value='Plataformas de Agendamiento Online'>
-                            Plataformas de Agendamiento Online
-                          </option>
-                          <option value='Sitios de Presencia en Línea'>
-                            Sitios de Presencia en Línea
-                          </option>
-                          <option value='Sistemas de Gestión Empresarial'>
-                            Sistemas de Gestión Empresarial
-                          </option>
-                          <option value='Aplicaciones Móviles'>
-                            Aplicaciones Móviles
-                          </option>
-                          <option value='Chatbots y Asistentes Virtuales'>
-                            Chatbots y Asistentes Virtuales
-                          </option>
-                          <option value='Integraciones Personalizadas y APIs'>
-                            Integraciones Personalizadas y APIs
-                          </option>
-                          <option value='Marketing Digital'>
-                            Marketing Digital
-                          </option>
-                          <option value='Social Media'>Social Media</option>
-                        </select>
-                      </div>
-                      <div className='form-field pt-4'>
-                        <label>Medio de Contacto Preferido</label>
-                        <select
-                          name='contactPreference'
-                          className='form-control'
-                          onChange={handleChange}
-                          value={formData.contactPreference}
-                        >
-                          <option disabled='disabled' value=''>
-                            Selecciona una opción
-                          </option>
-                          <option value='Llamada telefónica'>
-                            Llamada telefónica
-                          </option>
-                          <option value='WhatsApp'>WhatsApp</option>
-                          <option value='Email'>Email</option>
-                        </select>
-                      </div>
-                      <div className='form-field pt-4'>
-                        <label>Horario Preferido</label>
-                        <select
-                          name='preferredContactTime'
-                          className='form-control'
-                          onChange={handleChange}
-                          value={formData.preferredContactTime}
-                        >
-                          <option disabled='disabled' value=''>
-                            Selecciona una opción
-                          </option>
-                          <option value='8:00 - 12:00'>8:00 - 12:00</option>
-                          <option value='12:00 - 16:00'>12:00 - 16:00</option>
-                          <option value='16:00 - 20:00'>16:00 - 20:00</option>
-                        </select>
-                      </div>
-                      <div className='form-field pt-4'>
-                        <label>¿Como supiste de nosotros?</label>
-                        <select
-                          name='referralSource'
-                          className='form-control'
-                          onChange={handleChange}
-                          value={formData.referralSource}
-                        >
-                          <option disabled='disabled' value=''>
-                            Selecciona una opción
-                          </option>
-                          <option value='Google'>Google</option>
-                          <option value='Instagram'>Instagram</option>
-                          <option value='LinkedIn'>LinkedIn</option>
-                          <option value='Evento'>Evento</option>
-                          <option value='Ejecutivo de ventas'>
-                            Ejecutivo de ventas
-                          </option>
-                          <option value='Un amigo'>Un amigo</option>
-                        </select>
-                      </div>
-                      <div className='col-md-6 col-sm-12 col-12 form-field pt-4'>
+                      <div className='col-md-12 col-12 form-field pt-4'>
                         <textarea
                           rows={5}
                           className='form-control'
                           name='message'
                           id='message'
-                          placeholder='Cuéntanos un poco sobre tu idea o requerimiento'
+                          placeholder='Cuéntanos sobre tu meta o desafío'
                           onChange={handleChange}
                           value={formData.message}
                         ></textarea>
@@ -422,7 +331,7 @@ const Services = () => {
                 </div>
               </div>
               <div className='row pt-2'>
-                <div className='col-md-6 col-sm-12'>
+                <div className='col-md-6'>
                   <a
                     href='https://wa.me/56974690241'
                     target='_blank'
@@ -436,7 +345,7 @@ const Services = () => {
                     </button>
                   </a>
                 </div>
-                <div className='col-md-6 col-sm-12'>
+                <div className='col-md-6'>
                   <a href='tel:+56974690241'>
                     <button
                       className='w-100 btn-call'

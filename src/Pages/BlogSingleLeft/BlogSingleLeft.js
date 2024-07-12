@@ -25,67 +25,67 @@ const BlogSingleLeft = () => {
         <HeaderTwo></HeaderTwo>
         <BreadCrumb></BreadCrumb>
        
-        <section class="blog-single-page-area ptb-120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-8 col-12">
-                        <div class="blog-sidebar">
-                            <div class="search-widget">
+        <section className"blog-single-page-area ptb-120">
+            <div className"container">
+                <div className"row">
+                    <div className"col-lg-4 col-md-8 col-12">
+                        <div className"blog-sidebar">
+                            <div className"search-widget">
                                 <form method="post" onSubmit={SubmitHandler}>
                                     <div>
-                                        <input type="text" class="form-control" placeholder="Search Here" />
-                                        <button type="submit"><i class="ti-search"></i></button>
+                                        <input type="text" className"form-control" placeholder="Search Here" />
+                                        <button type="submit"><i className"ti-search"></i></button>
                                     </div>
                                 </form>
                             </div>
-                            <div class="category-widget widget">
+                            <div className"category-widget widget">
                                 <h3>Category</h3>
                                 <ul>
-                                    <li><Link to="/blog-single"><span><i class="icon-arrow"></i>Creative
+                                    <li><Link to="/blog-single"><span><i className"icon-arrow"></i>Creative
                                                 Design Solutions</span> (3)</Link></li>
-                                    <li><Link to="/blog-single"><span><i class="icon-arrow"></i>Web
+                                    <li><Link to="/blog-single"><span><i className"icon-arrow"></i>Web
                                                 Development Wizardry</span> (1)</Link></li>
-                                    <li><Link to="/blog-single"><span><i class="icon-arrow"></i>Content
+                                    <li><Link to="/blog-single"><span><i className"icon-arrow"></i>Content
                                                 Creation and Strategy</span> (4)</Link></li>
-                                    <li><Link to="/blog-single"><span><i class="icon-arrow"></i>UI/UX Design
+                                    <li><Link to="/blog-single"><span><i className"icon-arrow"></i>UI/UX Design
                                                 Innovation</span> (4)</Link></li>
                                 </ul>
                             </div>
-                            <div class="recent-post widget">
+                            <div className"recent-post widget">
                                 <h3>Recent Posts</h3>
-                                <div class="post">
-                                    <div class="post-img">
+                                <div className"post">
+                                    <div className"post-img">
                                         <img src={img4} alt="" />
                                     </div>
-                                    <div class="post-content">
+                                    <div className"post-content">
                                         <ul>
-                                            <li><i class="ti-folder"></i></li>
+                                            <li><i className"ti-folder"></i></li>
                                             <li>Category</li>
                                         </ul>
                                         <h4><Link to="/blog-single">A picture is worth standard and stand us
                                                 return loram</Link></h4>
                                     </div>
                                 </div>
-                                <div class="post">
-                                    <div class="post-img">
+                                <div className"post">
+                                    <div className"post-img">
                                         <img src={img5} alt="" />
                                     </div>
-                                    <div class="post-content">
+                                    <div className"post-content">
                                         <ul>
-                                            <li><i class="ti-folder"></i></li>
+                                            <li><i className"ti-folder"></i></li>
                                             <li>Category</li>
                                         </ul>
                                         <h4><Link to="/blog-single">the regular hardster standard and stand
                                                 us return loram</Link></h4>
                                     </div>
                                 </div>
-                                <div class="post">
-                                    <div class="post-img">
+                                <div className"post">
+                                    <div className"post-img">
                                         <img src={img6} alt="" />
                                     </div>
-                                    <div class="post-content">
+                                    <div className"post-content">
                                         <ul>
-                                            <li><i class="ti-folder"></i></li>
+                                            <li><i className"ti-folder"></i></li>
                                             <li>Category</li>
                                         </ul>
                                         <h4><Link to="/blog-single">A picture is worth standard and stand us
@@ -93,23 +93,23 @@ const BlogSingleLeft = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="widget about-widget">
+                            <div className"widget about-widget">
                                 <h3>About Me</h3>
-                                <div class="img-holder">
+                                <div className"img-holder">
                                     <img src={img7} alt="" />
                                 </div>
                                 <h4>fazil Tora smarle</h4>
                                 <p>Aliquam eros justo, posuere loborti viverra ullamcorper posuere viverra
                                     .Aliquam eros justo, posuere </p>
-                                <div class="social">
-                                    <ul class="clearfix">
-                                        <li><Link to="#"><i class="ti-facebook"></i></Link></li>
-                                        <li><Link to="#"><i class="ti-twitter-alt"></i></Link></li>
-                                        <li><Link to="#"><i class="ti-linkedin"></i></Link></li>
+                                <div className"social">
+                                    <ul className"clearfix">
+                                        <li><Link to="#"><i className"ti-facebook"></i></Link></li>
+                                        <li><Link to="#"><i className"ti-twitter-alt"></i></Link></li>
+                                        <li><Link to="#"><i className"ti-linkedin"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="tag-widget widget">
+                            <div className"tag-widget widget">
                                 <h3>Popular Tags</h3>
                                 <ul>
                                     <li><Link to="/blog-single">All Project</Link></li>
@@ -122,20 +122,20 @@ const BlogSingleLeft = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col col-lg-8 col-md-12 col-12">
-                        <div class="blog-single-wrap">
-                            <div class="blog-single-text">
-                                <div class="blog-img">
+                    <div className"col col-lg-8 col-md-12 col-12">
+                        <div className"blog-single-wrap">
+                            <div className"blog-single-text">
+                                <div className"blog-img">
                                     <img src={img1} alt="" />
                                     <ul>
                                         <li>By Stanio lainto</li>
-                                        <li><i class="ti-tag"></i> Web design</li>
-                                        <li><i class="ti-comments"></i> Comments (05)</li>
+                                        <li><i className"ti-tag"></i> Web design</li>
+                                        <li><i className"ti-comments"></i> Comments (05)</li>
                                     </ul>
-                                    <div class="date"><span>21 September 2022 </span></div>
+                                    <div className"date"><span>21 September 2022 </span></div>
                                 </div>
                             </div>
-                            <div class="blog-single-text-wrap">
+                            <div className"blog-single-text-wrap">
                                 <h2>Elevate your brand with a the stunning portfolio</h2>
                                 <p>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere
                                     viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis
@@ -155,9 +155,9 @@ const BlogSingleLeft = () => {
                             <p>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere
                                 viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis
                                 fermentum ullamcorper viverra laoreet Aliquam eros </p>
-                            <div class="detail-img">
-                                <div class="row">
-                                    <div class="col-lg-8 col-md-6 col-12">
+                            <div className"detail-img">
+                                <div className"row">
+                                    <div className"col-lg-8 col-md-6 col-12">
                                         <p>Ished fact that a reader will be distrol acted bioii the.ished fact
                                             th reader will besi distrol ac laoreet Aliquam fact that a reader
                                             will be distrol acted Aliquam posuere loborti viverra laoreet</p>
@@ -167,28 +167,28 @@ const BlogSingleLeft = () => {
                                         <p>Aliquam eros justo, posuere loborti viverra laoreet matti design an
                                             the ullamcorper posuere viverra .Aliquam eros</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12">
+                                    <div className"col-lg-4 col-md-6 col-12">
                                         <img src={img2} alt="" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="more-posts">
-                                <div class="previous-post">
+                            <div className"more-posts">
+                                <div className"previous-post">
                                     <Link to="/blog-single">
-                                        <span class="post-control-link">Previous Post</span>
-                                        <span class="post-name">Insure your peace of mind.</span>
+                                        <span className"post-control-link">Previous Post</span>
+                                        <span className"post-name">Insure your peace of mind.</span>
                                     </Link>
                                 </div>
-                                <div class="next-post">
+                                <div className"next-post">
                                     <Link to="/blog-left-sidebar">
-                                        <span class="post-control-link">Next Post</span>
-                                        <span class="post-name">Coverage you can count on</span>
+                                        <span className"post-control-link">Next Post</span>
+                                        <span className"post-name">Coverage you can count on</span>
                                     </Link>
                                 </div>
                             </div>
 
-                            <div class="tag-share clearfix">
-                                <div class="tag">
+                            <div className"tag-share clearfix">
+                                <div className"tag">
                                     <ul>
                                         <li><Link to="#"><strong>Keyword:</strong></Link></li>
                                         <li><Link to="#">Interiour</Link></li>
@@ -196,33 +196,33 @@ const BlogSingleLeft = () => {
                                         <li><Link to="#">Graphics</Link></li>
                                     </ul>
                                 </div>
-                                <div class="share">
+                                <div className"share">
                                     <ul>
-                                        <li><Link to="#"><i class="ti-facebook"></i></Link></li>
-                                        <li><Link to="#"><i class="ti-twitter-alt"></i></Link></li>
-                                        <li><Link to="#"><i class="ti-linkedin"></i></Link></li>
-                                        <li><Link to="#"><i class="ti-instagram"></i></Link></li>
+                                        <li><Link to="#"><i className"ti-facebook"></i></Link></li>
+                                        <li><Link to="#"><i className"ti-twitter-alt"></i></Link></li>
+                                        <li><Link to="#"><i className"ti-linkedin"></i></Link></li>
+                                        <li><Link to="#"><i className"ti-instagram"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="comments-area">
-                                <div class="comments-section">
-                                    <h3 class="comments-title">5 Comments</h3>
-                                    <ol class="comments">
-                                        <li class="comment even thread-even depth-1" id="comment-1">
+                            <div className"comments-area">
+                                <div className"comments-section">
+                                    <h3 className"comments-title">5 Comments</h3>
+                                    <ol className"comments">
+                                        <li className"comment even thread-even depth-1" id="comment-1">
                                             <div id="div-comment-1">
-                                                <div class="comment-theme">
-                                                    <div class="comment-image"><img src="assets/images/blog-single/author1.png" alt="" /></div>
+                                                <div className"comment-theme">
+                                                    <div className"comment-image"><img src="assets/images/blog-single/author1.png" alt="" /></div>
                                                 </div>
-                                                <div class="comment-main-area">
-                                                    <div class="comment-wrapper">
-                                                        <div class="comments-meta">
-                                                            <h4>fazil Tora <span class="comments-date">September 16, 2023</span></h4>
+                                                <div className"comment-main-area">
+                                                    <div className"comment-wrapper">
+                                                        <div className"comments-meta">
+                                                            <h4>fazil Tora <span className"comments-date">September 16, 2023</span></h4>
                                                         </div>
-                                                        <div class="comment-area">
+                                                        <div className"comment-area">
                                                             <p>Ished fact that a reader will be distrol acted bioii the.ished fact that a reader will be distrol acted laoreet Aliquam fact that a reader will be distrol acted Aliquam eros justo.</p>
-                                                            <div class="comments-reply">
-                                                                <Link class="comment-reply-link" to="#"><span>Reply</span></Link>
+                                                            <div className"comments-reply">
+                                                                <Link className"comment-reply-link" to="#"><span>Reply</span></Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -230,20 +230,20 @@ const BlogSingleLeft = () => {
                                             </div>
                                         </li>
 
-                                        <li class="comment">
+                                        <li className"comment">
                                             <div>
-                                                <div class="comment-theme">
-                                                    <div class="comment-image"><img src="assets/images/blog-single/author2.png" alt="" /></div>
+                                                <div className"comment-theme">
+                                                    <div className"comment-image"><img src="assets/images/blog-single/author2.png" alt="" /></div>
                                                 </div>
-                                                <div class="comment-main-area">
-                                                    <div class="comment-wrapper">
-                                                        <div class="comments-meta">
-                                                            <h4>kawa <span class="comments-date">says Oct 15, 2020 at 11:00am</span></h4>
+                                                <div className"comment-main-area">
+                                                    <div className"comment-wrapper">
+                                                        <div className"comments-meta">
+                                                            <h4>kawa <span className"comments-date">says Oct 15, 2020 at 11:00am</span></h4>
                                                         </div>
-                                                        <div class="comment-area">
+                                                        <div className"comment-area">
                                                             <p>When Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back</p>
-                                                            <div class="comments-reply">
-                                                                <Link  class="comment-reply-link" to="#"><span>Reply</span></Link>
+                                                            <div className"comments-reply">
+                                                                <Link  className"comment-reply-link" to="#"><span>Reply</span></Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -253,23 +253,23 @@ const BlogSingleLeft = () => {
                                     </ol>
                                 </div>
                             </div> 
-                            <div class="comment-respond">
-                                <div class="comment-respond-inner">
-                                    <h3 class="comment-reply-title">Leave a comment</h3>
+                            <div className"comment-respond">
+                                <div className"comment-respond-inner">
+                                    <h3 className"comment-reply-title">Leave a comment</h3>
                                     <p>By using form u agree with the message sorage, you can contact us directly now
                                     </p>
-                                    <form class="comment-form" method="post" onSubmit={SubmitHandler}>
-                                        <div class="form-inputs">
-                                            <div class="form-field">
+                                    <form className"comment-form" method="post" onSubmit={SubmitHandler}>
+                                        <div className"form-inputs">
+                                            <div className"form-field">
                                                 <label>Your Name</label>
                                                 <input type="text" placeholder="Name" />
                                             </div>
-                                            <div class="form-textarea">
+                                            <div className"form-textarea">
                                                 <label>Message</label>
                                                 <textarea id="comment" placeholder="Message here"></textarea>
                                             </div>
                                         </div>
-                                        <div class="form-submit">
+                                        <div className"form-submit">
                                             <input id="submit" value="Send Message" type="submit" />
                                         </div>
                                     </form>
