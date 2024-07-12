@@ -390,6 +390,9 @@ a.ui-button:active,
         opacity: 1;
         transform: scale(0);
     }
+    @media(max-width: 991px){
+        display: none;
+    }
 }
 
 .mouse-circle-mover-follow {
@@ -408,6 +411,9 @@ a.ui-button:active,
 
     &.active {
         transform: scale(3);
+    }
+    @media(max-width: 991px){
+        display: none;
     }
 }
 
