@@ -78,11 +78,7 @@ const ContactsList = () => {
             <th>Empresa</th>
             <th>Email</th>
             <th>Teléfono</th>
-            <th>Servicio</th>
-            <th>Mensaje</th>
-            <th>Preferencia Contacto</th>
-            <th>Horario Contacto</th>
-            <th>Referido Por</th>
+            <th>Meta o Desafío</th>
             <th>Estado</th>
             <th>Acciones</th>
           </tr>
@@ -94,11 +90,7 @@ const ContactsList = () => {
               <td>{contact.company}</td>
               <td>{contact.email}</td>
               <td>{contact.phone}</td>
-              <td>{contact.interestService}</td>
-              <td>{contact.message}</td>
-              <td>{contact.contactPreference}</td>
-              <td>{contact.preferredContactTime}</td>
-              <td>{contact.referralSource}</td>
+              <td>{contact.message}</td>  
               <td>
                 <Form.Select
                   value={contact.contactStatus}
