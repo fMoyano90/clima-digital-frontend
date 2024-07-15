@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.22c4e1b2.css",
-    "main.js": "/static/js/main.f482c8ca.js",
+    "main.css": "/static/css/main.10cdb0c5.css",
+    "main.js": "/static/js/main.4c054141.js",
     "static/js/787.0ed08e0a.chunk.js": "/static/js/787.0ed08e0a.chunk.js",
     "static/media/213616_small.mp4": "/static/media/213616_small.b228e3f268d766890edd.mp4",
     "static/media/131735-751029898_small.mp4": "/static/media/131735-751029898_small.a3f6e21f60e79a9b21f7.mp4",
+    "static/media/cafe-398x453.png": "/static/media/cafe-398x453.7376c2fb75109bfeed97.png",
     "static/media/skill-bg2.png": "/static/media/skill-bg2.a1287f68bede121a43c2.png",
+    "static/media/universo-280x325.png": "/static/media/universo-280x325.626cd0b41b9ec0079b0b.png",
     "static/media/themify.svg?-fvbane": "/static/media/themify.f0fc8c798eac5636249c.svg",
+    "static/media/aym-275x331.png": "/static/media/aym-275x331.a05edd9ad2538c5ebbc0.png",
     "static/media/skill-bg.png": "/static/media/skill-bg.ecd38b83c279e3953f20.png",
+    "static/media/clima-255x174.png": "/static/media/clima-255x174.050c705151bb51d253df.png",
     "static/media/newslatter-bg.png": "/static/media/newslatter-bg.87f161b423520f227eed.png",
+    "static/media/aym-187x196.png": "/static/media/aym-187x196.9d6b8c8c4d8d2284ddf5.png",
     "static/media/themify.eot": "/static/media/themify.9bad94440d49256265a5.eot",
     "static/media/themify.ttf?-fvbane": "/static/media/themify.eda8b94308c6f538f04a.ttf",
     "static/media/newslatter-bg2.png": "/static/media/newslatter-bg2.b7c9c5a2fb86b8afc584.png",
@@ -25,26 +30,22 @@
     "static/media/logo2.png": "/static/media/logo2.9e32151be6c764d25bbd.png",
     "static/media/ai.svg": "/static/media/ai.725a1c360a56bc4f95084bc63da40de7.svg",
     "static/media/adaptation.svg": "/static/media/adaptation.6525c202e9c91e7702fe2efe80761683.svg",
-    "static/media/innovacion-calidad-01.svg": "/static/media/innovacion-calidad-01.81c5479b86d725459e32285fdcb12bde.svg",
     "static/media/support.svg": "/static/media/support.073ddcf125f73e452cfa6337af709aac.svg",
     "static/media/scalability.svg": "/static/media/scalability.4d2a8e4702c08f3d9f8180863ca1632d.svg",
-    "static/media/vision-01-01.svg": "/static/media/vision-01-01.4c96053997d233e26f120731e4aa6fd7.svg",
     "static/media/transparency.svg": "/static/media/transparency.c9e4a5185e537ccb41a42b717b2f5dc4.svg",
     "static/media/e-commerce-01.svg": "/static/media/e-commerce-01.b58dfc3f49e14fb49cdde4c8085b2947.svg",
     "static/media/scrum.svg": "/static/media/scrum.645c801084475b8b5dc7de04d3badea7.svg",
     "static/media/website-01.svg": "/static/media/website-01.5a971bb95c1006c17c205b7d08926811.svg",
-    "static/media/pasion-01-01.svg": "/static/media/pasion-01-01.9266c0c329a974f2e55f14ce08dc1b93.svg",
-    "static/media/transparencia-02-01.svg": "/static/media/transparencia-02-01.f3581cf1049dcc8d13f5759e154e7876.svg",
     "static/media/clima.svg": "/static/media/clima.b95a66b1e36f9c2f1c47516a2904bb7b.svg",
     "static/media/logo-white.svg": "/static/media/logo-white.76483af01296e27e952276e0000f00f9.svg",
     "static/media/thermometer-01.svg": "/static/media/thermometer-01.c812d4a531c8209a2913503bccd5f42c.svg",
     "index.html": "/index.html",
-    "main.22c4e1b2.css.map": "/static/css/main.22c4e1b2.css.map",
-    "main.f482c8ca.js.map": "/static/js/main.f482c8ca.js.map",
+    "main.10cdb0c5.css.map": "/static/css/main.10cdb0c5.css.map",
+    "main.4c054141.js.map": "/static/js/main.4c054141.js.map",
     "787.0ed08e0a.chunk.js.map": "/static/js/787.0ed08e0a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22c4e1b2.css",
-    "static/js/main.f482c8ca.js"
+    "static/css/main.10cdb0c5.css",
+    "static/js/main.4c054141.js"
   ]
 }
