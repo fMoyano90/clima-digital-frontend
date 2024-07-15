@@ -153,7 +153,7 @@ const Services = () => {
                       <div className='col-xl-4  col-md-6 col-sm-12'>
                         <div className='card-m-services'>
                           <img src={img1} alt='' />
-                          <h3>Gestión Documental</h3>
+                          <h3>Gestión de Servicios</h3>
                         </div>
                       </div>
                       <div className='col-xl-4  col-md-6 col-sm-12'>
