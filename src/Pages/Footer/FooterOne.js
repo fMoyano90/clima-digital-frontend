@@ -81,14 +81,9 @@ const FooterOne = () => {
                   <div className='widget social-widget p-2'>
                     <ul>
                       <li>
-                        <Link to='/'>
-                          <i className='ti-linkedin'></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to='/'>
+                        <a href='https://www.instagram.com/climadigital.cl?igsh=dWY4OTZpZ3lyOGoy' target="__blank">
                           <i className='ti-instagram'></i>
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>
