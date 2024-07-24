@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.10cdb0c5.css",
-    "main.js": "/static/js/main.4c054141.js",
+    "main.js": "/static/js/main.5335761e.js",
     "static/js/787.0ed08e0a.chunk.js": "/static/js/787.0ed08e0a.chunk.js",
     "static/media/213616_small.mp4": "/static/media/213616_small.b228e3f268d766890edd.mp4",
     "static/media/131735-751029898_small.mp4": "/static/media/131735-751029898_small.a3f6e21f60e79a9b21f7.mp4",
@@ -9,11 +9,9 @@
     "static/media/skill-bg2.png": "/static/media/skill-bg2.a1287f68bede121a43c2.png",
     "static/media/universo-280x325.png": "/static/media/universo-280x325.626cd0b41b9ec0079b0b.png",
     "static/media/themify.svg?-fvbane": "/static/media/themify.f0fc8c798eac5636249c.svg",
-    "static/media/aym-275x331.png": "/static/media/aym-275x331.a05edd9ad2538c5ebbc0.png",
     "static/media/skill-bg.png": "/static/media/skill-bg.ecd38b83c279e3953f20.png",
     "static/media/clima-255x174.png": "/static/media/clima-255x174.050c705151bb51d253df.png",
     "static/media/newslatter-bg.png": "/static/media/newslatter-bg.87f161b423520f227eed.png",
-    "static/media/aym-187x196.png": "/static/media/aym-187x196.9d6b8c8c4d8d2284ddf5.png",
     "static/media/themify.eot": "/static/media/themify.9bad94440d49256265a5.eot",
     "static/media/themify.ttf?-fvbane": "/static/media/themify.eda8b94308c6f538f04a.ttf",
     "static/media/newslatter-bg2.png": "/static/media/newslatter-bg2.b7c9c5a2fb86b8afc584.png",
@@ -22,6 +20,7 @@
     "static/media/themify.woff?-fvbane": "/static/media/themify.29b39089170885ae2967.woff",
     "static/media/left-line.png": "/static/media/left-line.e2cf8139ae43ce82ad5f.png",
     "static/media/event-bg.png": "/static/media/event-bg.cb7fe610ccb39c31d81b.png",
+    "static/media/work-275x331.jpg": "/static/media/work-275x331.ae2bf5249fd6019d86ee.jpg",
     "static/media/icomoon.eot?ava1xw": "/static/media/icomoon.664032010b703d711025.eot",
     "static/media/icomoon.woff?ava1xw": "/static/media/icomoon.3b41bcdb299fe49e1ba0.woff",
     "static/media/icomoon.ttf?ava1xw": "/static/media/icomoon.103ccd2ac9186aff3757.ttf",
@@ -41,11 +40,11 @@
     "static/media/thermometer-01.svg": "/static/media/thermometer-01.c812d4a531c8209a2913503bccd5f42c.svg",
     "index.html": "/index.html",
     "main.10cdb0c5.css.map": "/static/css/main.10cdb0c5.css.map",
-    "main.4c054141.js.map": "/static/js/main.4c054141.js.map",
+    "main.5335761e.js.map": "/static/js/main.5335761e.js.map",
     "787.0ed08e0a.chunk.js.map": "/static/js/787.0ed08e0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10cdb0c5.css",
-    "static/js/main.4c054141.js"
+    "static/js/main.5335761e.js"
   ]
 }
