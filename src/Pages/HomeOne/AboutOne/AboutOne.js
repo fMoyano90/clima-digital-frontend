@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import BannerBg from "../../../assets/images/about/arrow-shape.png";
-import AboutUs from "../../../assets/images/aym-275x331.png";
+import AboutUs from "../../../assets/images/work-275x331.jpg";
 import img2 from "../../../assets/images/universo-280x325.png";
 import WOW from "wowjs";
 
