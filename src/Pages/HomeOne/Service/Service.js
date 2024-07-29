@@ -59,9 +59,8 @@ const Service = () => {
     <section className='service-area ptb-120'>
       <div className='container'>
         <div className='service-wrap'>
-          <span>DESTACADOS</span>
           <h2 className='site-split-text ch-split-in-right pb-5'>
-            Servicios Que Te Llevaran a las Nubes ☁️
+            Servicios
           </h2>
           <div className='row'>
             {servicesData.map((item, id) => (

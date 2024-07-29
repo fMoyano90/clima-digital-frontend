@@ -8,7 +8,7 @@ export default function Header({ variant }) {
   const [isSticky, setIsSticky] = useState(false);
   const [mobileToggle, setMobileToggle] = useState(false);
   const handleClick = () => {
-    const url = `https://wa.me/56974690241?text=${encodeURIComponent(
+    const url = `https://wa.me/56983093727?text=${encodeURIComponent(
       "Hola, estoy interesado en un servicio."
     )}`;
     window.open(url, "_blank");

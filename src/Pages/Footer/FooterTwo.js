@@ -4,7 +4,7 @@ import Logo from "../../assets/images/logo-white.svg";
 
 const FooterTwo = () => {
   const handleClick = () => {
-    const url = `https://wa.me/56974690241?text=${encodeURIComponent(
+    const url = `https://wa.me/56983093727?text=${encodeURIComponent(
       "Hola, estoy interesado en un servicio."
     )}`;
     window.open(url, "_blank");
@@ -58,7 +58,7 @@ const FooterTwo = () => {
                   <div className="contact-ft">
                     <ul>
                       <li onClick={handleClick} style={{ cursor: "pointer" }}>
-                        <i className="icon-Group-7042"></i>+569 7469 0241
+                        <i className="icon-Group-7042"></i>+569 8309 3727
                       </li>
                       <li>
                         <a

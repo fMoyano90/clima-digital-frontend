@@ -195,7 +195,7 @@ const Contact = () => {
               <div className='col col-xl-4 col-lg-4 col-md-6 col-12'>
                 <div className='office-info-item' style={{ cursor: "pointer" }}>
                   <a
-                    href='https://wa.me/56974690241'
+                    href='https://wa.me/56983093727'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -228,7 +228,7 @@ const Contact = () => {
               </div>
               <div className='col col-xl-4 col-lg-4 col-md-6 col-12'>
                 <div className='office-info-item' style={{ cursor: "pointer" }}>
-                  <a href='tel:+56974690241'>
+                  <a href='tel:+56983093727'>
                     <div className='office-info-icon'>
                       <div className='icon'>
                         <i className='icon-Group-7042'></i>
@@ -236,7 +236,7 @@ const Contact = () => {
                     </div>
                     <div className='office-info-text'>
                       <h2>Hablemos</h2>
-                      <p>+569 7469 0241</p>
+                      <p>+569 8309 3727</p>
                     </div>
                   </a>
                 </div>

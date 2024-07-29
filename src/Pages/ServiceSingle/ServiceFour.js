@@ -269,7 +269,7 @@ const Services = () => {
               <div className='row pt-2'>
                 <div className='col-md-6'>
                   <a
-                    href='https://wa.me/56974690241'
+                    href='https://wa.me/56983093727'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -282,7 +282,7 @@ const Services = () => {
                   </a>
                 </div>
                 <div className='col-md-6'>
-                  <a href='tel:+56974690241'>
+                  <a href='tel:+56983093727'>
                     <button
                       className='w-100 btn-call'
                       style={{ cursor: "pointer" }}
