@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import {
   fetchContactById,
   updateContact,
-} from "../../../services/contactServices";
+} from "../../../services/contact.service";
 
 const EditContact = () => {
   const { id } = useParams();

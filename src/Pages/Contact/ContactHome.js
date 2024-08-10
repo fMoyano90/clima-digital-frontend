@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import backgroundVideo from "../../assets/images/131735-751029898_small.mp4"; // Asegúrate de que la ruta sea correcta
 
 const ContactHome = () => {
   useEffect(() => {
@@ -105,12 +104,6 @@ const ContactHome = () => {
 
   return (
     <section className='ch-service-area ptb-120'>
-      <div className='video-background'>
-        <video autoPlay muted loop>
-          <source src={backgroundVideo} type='video/mp4' />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       <section className='contact-pg-section contact-home'>
         <div className='container'>
           <div className='row'>

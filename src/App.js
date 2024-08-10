@@ -5,12 +5,12 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import HomeOne from "./Pages/HomeOne/HomeOne/HomeOne";
+import HomeOne from "./Pages/Home/HomeOne/HomeOne";
 import About from "./Pages/About/About";
-import ServiceOne from "./Pages/ServiceSingle/ServiceOne";
-import ServiceTwo from "./Pages/ServiceSingle/ServiceTwo";
-import ServiceThree from "./Pages/ServiceSingle/ServiceThree";
-import ServiceFour from "./Pages/ServiceSingle/ServiceFour";
+import WebSites from "./Pages/Products/WebSites";
+import ServiceTwo from "./Pages/Products/OnlineStores";
+import ServiceThree from "./Pages/Products/WebSystems";
+import ServiceFour from "./Pages/Products/MobileApps";
 import Contact from "./Pages/Contact/Contact";
 // import BlogRightSidebar from "./Pages/BlogRightSidebar/BlogRightSidebar";
 // import BlogSingle from "./Pages/BlogSingle/BlogSingle";
@@ -25,7 +25,7 @@ function App() {
           <Route path='/' element={<HomeOne />} />
           <Route path='/nosotros' element={<About />} />
           {/* <Route path='/servicios' element={<Services />} /> */}
-          <Route path='/servicio/sitios-web-profesionales' element={<ServiceOne />} />
+          <Route path='/servicio/sitios-web-profesionales' element={<WebSites />} />
           <Route path='/servicio/tiendas-online' element={<ServiceTwo />} />
           <Route path='/servicio/sistemas-gestion' element={<ServiceThree />} />
           <Route path='/servicio/apps-moviles' element={<ServiceFour/>} />

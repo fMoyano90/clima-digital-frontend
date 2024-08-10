@@ -3,12 +3,9 @@ import { pageTitle } from "../PageTitle";
 import BreadCrumb from "../BreadCrumb";
 import HeaderOne from "../Header/HeaderOne";
 import FooterTwo from "../Footer/FooterTwo";
-import AboutOne from "../HomeOne/AboutOne/AboutOne";
-import TextAnimationTwo from "../HomeOne/TextAnimationTwo/TextAnimationTwo";
-// import ServicesTwo from "../HomeTwo/ServicesTwo/ServicesTwo";
-// import Testimonial from "../HomeOne/Testimonial/Testimonial";
-// import PortfoliosOne from "../HomeOne/PortfoliosOne/PortfoliosOne";
-import AboutTwo from "../HomeTwo/AboutTwo/AboutTwo";
+import AboutOne from "../Home/AboutOne/AboutOne";
+import TextAnimationTwo from "../Home/TextAnimationTwo/TextAnimationTwo";
+import AboutTwo from "../Home/AboutTwo/AboutTwo";
 
 const About = () => {
   pageTitle("Nosotros");
@@ -19,10 +16,7 @@ const About = () => {
       <BreadCrumb></BreadCrumb>
       <AboutOne></AboutOne>
       <TextAnimationTwo></TextAnimationTwo>
-      {/* <ServicesTwo></ServicesTwo> */}
-      {/* <PortfoliosOne></PortfoliosOne> */}
       <AboutTwo></AboutTwo>
-
       <FooterTwo></FooterTwo>
     </>
   );

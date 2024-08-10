@@ -6,7 +6,7 @@ import {
   fetchContacts,
   updateContactStatus,
   deleteContact,
-} from "../../../services/contactServices";
+} from "../../../services/contact.service";
 
 const ContactsList = () => {
   const [contacts, setContacts] = useState([]);

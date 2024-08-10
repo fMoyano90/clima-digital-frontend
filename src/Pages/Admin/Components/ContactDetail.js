@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchContactById } from "../../../services/contactServices";
+import { fetchContactById } from "../../../services/contact.service";
 
 const ContactDetail = () => {
   const { id } = useParams();
