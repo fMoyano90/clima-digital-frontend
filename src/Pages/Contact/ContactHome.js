@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { submitContactForm } from "../../services/contact.service";
 
 const ContactHome = () => {
   useEffect(() => {
@@ -57,49 +57,37 @@ const ContactHome = () => {
     });
   };
 
-  const SubmitHandler = (e) => {
+  const SubmitHandler = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    let config = {
-      method: "post",
-      maxBodyLength: Infinity,
-      url: "https://clima-digital-bff-0c8760dd7b54.herokuapp.com/v1/contact",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      data: JSON.stringify(formData),
-    };
-
-    axios
-      .request(config)
-      .then((response) => {
-        console.log(JSON.stringify(response.data));
-        setSuccessMessage("¡Gracias! Mensaje Enviado");
-        setErrorMessage("");
-        setFormData({
-          name: "",
-          company: "",
-          email: "",
-          phone: "",
-          interestService: "",
-          message: "",
-          contactPreference: "",
-          preferredContactTime: "",
-          referralSource: "",
-          contactStatus: "NEW",
-          internalNotes: "",
-        });
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.log(error);
-        setErrorMessage(
-          "Ocurrió un error al enviar tu solicitud. Por favor intenta más tarde."
-        );
-        setSuccessMessage("");
-        setLoading(false);
+    try {
+      const responseData = await submitContactForm(formData);
+      console.log(JSON.stringify(responseData));
+      setSuccessMessage('¡Gracias! Mensaje Enviado');
+      setErrorMessage('');
+      setFormData({
+        name: '',
+        company: '',
+        email: '',
+        phone: '',
+        interestService: '',
+        message: '',
+        contactPreference: '',
+        preferredContactTime: '',
+        referralSource: '',
+        contactStatus: 'NEW',
+        internalNotes: '',
       });
+    } catch (error) {
+      console.error(error);
+      setErrorMessage(
+        'Ocurrió un error al enviar tu solicitud. Por favor intenta más tarde.'
+      );
+      setSuccessMessage('');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

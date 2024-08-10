@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.73907d41.css",
-    "main.js": "/static/js/main.c3706479.js",
+    "main.js": "/static/js/main.a8747d4f.js",
     "static/js/787.0ed08e0a.chunk.js": "/static/js/787.0ed08e0a.chunk.js",
     "static/media/213616_small.mp4": "/static/media/213616_small.b228e3f268d766890edd.mp4",
-    "static/media/131735-751029898_small.mp4": "/static/media/131735-751029898_small.a3f6e21f60e79a9b21f7.mp4",
     "static/media/cafe-398x453.png": "/static/media/cafe-398x453.7376c2fb75109bfeed97.png",
     "static/media/skill-bg2.png": "/static/media/skill-bg2.a1287f68bede121a43c2.png",
     "static/media/universo-280x325.png": "/static/media/universo-280x325.626cd0b41b9ec0079b0b.png",
@@ -40,11 +39,11 @@
     "static/media/thermometer-01.svg": "/static/media/thermometer-01.c812d4a531c8209a2913503bccd5f42c.svg",
     "index.html": "/index.html",
     "main.73907d41.css.map": "/static/css/main.73907d41.css.map",
-    "main.c3706479.js.map": "/static/js/main.c3706479.js.map",
+    "main.a8747d4f.js.map": "/static/js/main.a8747d4f.js.map",
     "787.0ed08e0a.chunk.js.map": "/static/js/787.0ed08e0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73907d41.css",
-    "static/js/main.c3706479.js"
+    "static/js/main.a8747d4f.js"
   ]
 }
