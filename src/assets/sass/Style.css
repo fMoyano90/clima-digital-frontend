@@ -34,7 +34,10 @@
     25. Blog Single Page
 
     -----------------------------------------------------------------------------------*/
-/*---------------------------
+@tailwind base;
+@tailwind components;
+@tailwind utilities;   
+    /*---------------------------
 	Fonts
 ----------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");

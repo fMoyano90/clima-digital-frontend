@@ -190,7 +190,7 @@ const Contact = () => {
                   >
                     <div className='office-info-icon'>
                       <div className='icon'>
-                        <FaWhatsapp className='fa-icon' />
+                        <FaWhatsapp className='fa-icon' style={{ display:'inline' }} />
                       </div>
                     </div>
                     <div className='office-info-text'>

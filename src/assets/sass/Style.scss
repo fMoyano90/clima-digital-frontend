@@ -35,7 +35,10 @@
 
     -----------------------------------------------------------------------------------*/
 
-    
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+   
 /** mobile-menu **/
 
 .nav-outer .mobile-nav-toggler{
